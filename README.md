@@ -32,18 +32,6 @@ Adventure is a microservices-based project designed to provide scalable and modu
 ### Accessing the Identity Service
 - The Identity Service provides endpoints for user authentication. Use these endpoints to register new users, login, and obtain authentication tokens.
 
-## Contributing
-
-Contributions to the Adventure project are welcome. If you find any bugs or have suggestions for improvements, please submit an issue or a pull request on the project repository.
-
-## License
-
-Adventure project is licensed under the MIT License. See the `LICENSE` file for details.
-
-## Contact
-
-For any inquiries or support, please contact the Adventure development team at adventure@example.com.
-
 ---
 
 **Enjoy exploring the Adventure microservices project!**
