@@ -1,0 +1,13 @@
+﻿global using CommonData.Models;
+global using Microsoft.EntityFrameworkCore;
+global using CommonData.Interfaces;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using System.Globalization;
+global using Microsoft.AspNetCore.Http;
+global using Microsoft.Extensions.Logging;
+global using System.Net;
+global using Microsoft.Extensions.Configuration;
+global using NLog;
+global using NLog.Config;
+global using NLog.Targets;
+global using LogLevel = NLog.LogLevel;

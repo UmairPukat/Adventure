@@ -1,0 +1,103 @@
+﻿{
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:5134"
+  },
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/gateway/GetAppSecret",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Auth/GetAppSecret",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5257
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/LoginUser",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Auth/Login",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5257
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/RegisterUser",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Auth/Register",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5257
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Person",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Person/GetAll",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5069
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Person/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/Person/GetById/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5069
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Person",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/Person/Add",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5069
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Person/{id}",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/Person/Update/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5069
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/Person",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/Person/Delete/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5069
+        }
+      ]
+    }
+  ]
+}

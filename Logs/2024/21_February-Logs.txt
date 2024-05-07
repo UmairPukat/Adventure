@@ -1,0 +1,78 @@
+2024-02-21 14:07:11.7712 Executing endpoint '/ConnectionHub/negotiate'
+2024-02-21 14:07:11.9080 New connection I8-i7N8riMw7zDkvVH9deg created.
+2024-02-21 14:07:11.9632 Sending negotiation response.
+2024-02-21 14:07:11.9683 Executed endpoint '/ConnectionHub/negotiate'
+2024-02-21 14:07:11.9683 Connection id "0HN1INHJPFCL7" completed keep alive response.
+2024-02-21 14:07:11.9850 Connection id "0HN1INHJPFCL8" accepted.
+2024-02-21 14:07:11.9850 Connection id "0HN1INHJPFCL8" started.
+2024-02-21 14:07:11.9979 Request starting HTTP/1.1 GET http://localhost:5107/ConnectionHub?id=9LcyfKo-5XNtFZzlBfMs8A&access_token=Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVGVzdEBnbWFpbC5jb20iLCJqdGkiOiI3OTk5ZjUwZi03NzVlLTRhZjQtODc5NC0zNThjODg1MzE2ZTQiLCJVc2VySWQiOiIxIiwiZXhwIjoxNzA4NTE2OTIzLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjcxMDkiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUxMDAifQ.ABfmM4yUCe3lwU4J54RWhTVs9aj904pwjN0p18aYpYU - -
+2024-02-21 14:07:11.9979 All hosts are allowed.
+2024-02-21 14:07:12.0166 1 candidate(s) found for the request path '/ConnectionHub'
+2024-02-21 14:07:12.0166 Request matched endpoint '/ConnectionHub'
+2024-02-21 14:07:12.0166 Static files was skipped as the request already matched an endpoint.
+2024-02-21 14:07:12.0166 The request has an origin header: 'http://localhost:4200'.
+2024-02-21 14:07:12.0292 CORS policy execution successful.
+2024-02-21 14:07:12.0292 AuthenticationScheme: Bearer was not authenticated.
+2024-02-21 14:07:12.1202 Executing endpoint '/ConnectionHub'
+2024-02-21 14:07:12.1651 Establishing new connection.
+2024-02-21 14:07:12.1848 OnConnectedAsync started.
+2024-02-21 14:07:12.2059 Socket opened using Sub-Protocol: '(null)'.
+2024-02-21 14:07:12.2938 Message received. Type: Text, size: 32, EndOfMessage: True.
+2024-02-21 14:07:12.3257 Found protocol implementation for requested protocol: json.
+2024-02-21 14:07:12.3357 Completed connection handshake. Using HubProtocol 'json'.
+2024-02-21 14:07:12.3544 Sending payload: 3 bytes.
+2024-02-21 14:07:12.3981 Message received. Type: Text, size: 11, EndOfMessage: True.
+2024-02-21 14:07:12.3981 Message received. Type: Text, size: 72, EndOfMessage: True.
+2024-02-21 14:07:12.4444 Received hub invocation: InvocationMessage { InvocationId: "0", Target: "GetConnectionId", Arguments: [  ], StreamIds: [  ] }.
+2024-02-21 14:07:12.4844 InvocationId 0: Sending result of type 'System.String'.
+2024-02-21 14:07:12.5001 Sending payload: 64 bytes.
+2024-02-21 14:07:18.2530 Connection id "0HN1INHJPFCL4" received FIN.
+2024-02-21 14:07:18.2530 Connection id "0HN1INHJPFCL5" received FIN.
+2024-02-21 14:07:18.2530 Connection id "0HN1INHJPFCL4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-21 14:07:18.2530 Connection id "0HN1INHJPFCL5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-21 14:07:18.2530 Connection id "0HN1INHJPFCL4" disconnecting.
+2024-02-21 14:07:18.2530 Connection id "0HN1INHJPFCL5" disconnecting.
+2024-02-21 14:07:18.2640 Connection id "0HN1INHJPFCL4" stopped.
+2024-02-21 14:07:18.2640 Connection id "0HN1INHJPFCL5" stopped.
+2024-02-21 14:07:27.4342 Sent a ping message to the client.
+2024-02-21 14:07:27.4342 Sending payload: 11 bytes.
+2024-02-21 14:07:27.4646 Message received. Type: Text, size: 11, EndOfMessage: True.
+2024-02-21 14:23:28.3655 Executing endpoint '/ConnectionHub/negotiate'
+2024-02-21 14:23:28.4026 New connection mixI6uNGM7VxyVuY9vO2Gg created.
+2024-02-21 14:23:28.4180 Sending negotiation response.
+2024-02-21 14:23:28.4180 Executed endpoint '/ConnectionHub/negotiate'
+2024-02-21 14:23:28.4202 Connection id "0HN1INQOVOG66" completed keep alive response.
+2024-02-21 14:23:28.4202 Connection id "0HN1INQOVOG67" accepted.
+2024-02-21 14:23:28.4202 Connection id "0HN1INQOVOG67" started.
+2024-02-21 14:23:28.4202 Request starting HTTP/1.1 GET http://localhost:5107/ConnectionHub?id=GHw3SNEcCPf74Voebmqzmg&access_token=Bearer%20eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVGVzdEBnbWFpbC5jb20iLCJqdGkiOiI3OTk5ZjUwZi03NzVlLTRhZjQtODc5NC0zNThjODg1MzE2ZTQiLCJVc2VySWQiOiIxIiwiZXhwIjoxNzA4NTE2OTIzLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjcxMDkiLCJhdWQiOiJodHRwOi8vbG9jYWxob3N0OjUxMDAifQ.ABfmM4yUCe3lwU4J54RWhTVs9aj904pwjN0p18aYpYU - -
+2024-02-21 14:23:28.4202 All hosts are allowed.
+2024-02-21 14:23:28.4373 1 candidate(s) found for the request path '/ConnectionHub'
+2024-02-21 14:23:28.4373 Request matched endpoint '/ConnectionHub'
+2024-02-21 14:23:28.4373 Static files was skipped as the request already matched an endpoint.
+2024-02-21 14:23:28.4373 The request has an origin header: 'http://localhost:4200'.
+2024-02-21 14:23:28.4373 CORS policy execution successful.
+2024-02-21 14:23:28.4373 AuthenticationScheme: Bearer was not authenticated.
+2024-02-21 14:23:28.4606 Executing endpoint '/ConnectionHub'
+2024-02-21 14:23:28.4712 Establishing new connection.
+2024-02-21 14:23:28.4712 OnConnectedAsync started.
+2024-02-21 14:23:28.4878 Socket opened using Sub-Protocol: '(null)'.
+2024-02-21 14:23:28.5038 Message received. Type: Text, size: 32, EndOfMessage: True.
+2024-02-21 14:23:28.5238 Found protocol implementation for requested protocol: json.
+2024-02-21 14:23:28.5238 Completed connection handshake. Using HubProtocol 'json'.
+2024-02-21 14:23:28.5358 Sending payload: 3 bytes.
+2024-02-21 14:23:28.5540 Message received. Type: Text, size: 11, EndOfMessage: True.
+2024-02-21 14:23:28.5540 Message received. Type: Text, size: 72, EndOfMessage: True.
+2024-02-21 14:23:28.5642 Received hub invocation: InvocationMessage { InvocationId: "0", Target: "GetConnectionId", Arguments: [  ], StreamIds: [  ] }.
+2024-02-21 14:23:28.5642 InvocationId 0: Sending result of type 'System.String'.
+2024-02-21 14:23:28.5787 Sending payload: 64 bytes.
+2024-02-21 14:23:29.7596 Connection id "0HN1INQOVOG66" received FIN.
+2024-02-21 14:23:29.7596 Connection id "0HN1INQOVOG65" received FIN.
+2024-02-21 14:23:29.7596 Connection id "0HN1INQOVOG66" disconnecting.
+2024-02-21 14:23:29.7596 Connection id "0HN1INQOVOG66" stopped.
+2024-02-21 14:23:29.7596 Connection id "0HN1INQOVOG65" disconnecting.
+2024-02-21 14:23:29.7596 Connection id "0HN1INQOVOG65" stopped.
+2024-02-21 14:23:29.7700 Connection id "0HN1INQOVOG65" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-21 14:23:29.7700 Connection id "0HN1INQOVOG66" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-21 14:23:43.5518 Message received. Type: Text, size: 11, EndOfMessage: True.
+2024-02-21 14:23:43.5653 Sending payload: 11 bytes.
+2024-02-21 14:23:43.5653 Sent a ping message to the client.

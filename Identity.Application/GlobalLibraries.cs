@@ -1,0 +1,13 @@
+﻿global using System.Security.Claims;
+global using System.Text;
+global using Identity.Application.Dtos;
+global using Identity.Application.Interfaces;
+global using Microsoft.IdentityModel.Tokens;
+global using System.IdentityModel.Tokens.Jwt;
+global using Identity.Domain.Entities.Auth;
+global using Identity.Infrastructure.Data;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using Identity.Application.Services;
+global using Microsoft.Extensions.Logging;

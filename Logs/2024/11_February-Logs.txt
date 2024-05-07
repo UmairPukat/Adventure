@@ -1,0 +1,422 @@
+2024-02-11 00:20:33.8009 Executing endpoint 'UserInteraction_WebApi.Controllers.BlockUserController.GetAllGroupBlock (UserInteraction_WebApi)'
+2024-02-11 00:20:34.0204 Route matched with {action = "GetAllGroupBlock", controller = "BlockUser"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllGroupBlock() on controller UserInteraction_WebApi.Controllers.BlockUserController (UserInteraction_WebApi).
+2024-02-11 00:20:34.0544 Execution plan of authorization filters (in the following order): None
+2024-02-11 00:20:34.0609 Execution plan of resource filters (in the following order): None
+2024-02-11 00:20:34.0609 Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-02-11 00:20:34.0609 Execution plan of exception filters (in the following order): None
+2024-02-11 00:20:34.0609 Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-02-11 00:20:34.0609 Executing controller factory for controller UserInteraction_WebApi.Controllers.BlockUserController (UserInteraction_WebApi)
+2024-02-11 00:20:34.6419 Executed controller factory for controller UserInteraction_WebApi.Controllers.BlockUserController (UserInteraction_WebApi)
+2024-02-11 00:20:34.6599 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-11 00:20:34.6599 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-11 00:20:34.6599 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-11 00:20:34.6599 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-11 00:20:34.7993 Executing action method UserInteraction_WebApi.Controllers.BlockUserController.GetAllGroupBlock (UserInteraction_WebApi) - Validation state: Valid
+2024-02-11 00:20:36.5621 An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-11 00:20:38.6347 No relationship from 'BlockedUser' to 'User' has been configured by convention because there are multiple properties on one entity type - {'BlockUser', 'User'} that could be matched with the properties on the other entity type - {'BlockedByUsers', 'BlockedUsers'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-11 00:20:39.0130 No relationship from 'Chat' to 'User' has been configured by convention because there are multiple properties on one entity type - {'Receiver', 'Sender'} that could be matched with the properties on the other entity type - {'Chats', 'ChatsReceived'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-11 00:20:39.0456 No relationship from 'User' to 'BlockedUser' has been configured by convention because there are multiple properties on one entity type - {'BlockedByUsers', 'BlockedUsers'} that could be matched with the properties on the other entity type - {'BlockUser', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-11 00:20:39.0456 No relationship from 'User' to 'Chat' has been configured by convention because there are multiple properties on one entity type - {'Chats', 'ChatsReceived'} that could be matched with the properties on the other entity type - {'Receiver', 'Sender'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-11 00:20:39.6241 No relationship from 'Chat' to 'User' has been configured by convention because there are multiple properties on one entity type - {'Receiver', 'Sender'} that could be matched with the properties on the other entity type - {'Chats', 'ChatsReceived'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-11 00:20:39.6241 No relationship from 'User' to 'BlockedUser' has been configured by convention because there are multiple properties on one entity type - {'BlockedByUsers', 'BlockedUsers'} that could be matched with the properties on the other entity type - {'BlockUser', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-11 00:20:39.6241 No relationship from 'User' to 'Chat' has been configured by convention because there are multiple properties on one entity type - {'Chats', 'ChatsReceived'} that could be matched with the properties on the other entity type - {'Receiver', 'Sender'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-11 00:20:39.6520 No relationship from 'User' to 'BlockedUser' has been configured by convention because there are multiple properties on one entity type - {'BlockedByUsers', 'BlockedUsers'} that could be matched with the properties on the other entity type - {'BlockUser', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-11 00:20:39.7176 No relationship from 'BlockedUser' to 'User' has been configured by convention because there are multiple properties on one entity type - {'BlockUser', 'User'} that could be matched with the properties on the other entity type - {'BlockedByUsers', 'BlockedUsers'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-11 00:20:39.7176 No relationship from 'User' to 'BlockedUser' has been configured by convention because there are multiple properties on one entity type - {'BlockedByUsers', 'BlockedUsers'} that could be matched with the properties on the other entity type - {'BlockUser', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-11 00:20:41.4493 Entity Framework Core 8.0.0 initialized 'UserInteractionDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-02-11 00:20:41.7503 Compiling query expression: 
+'DbSet<BlockedUser>()
+    .Include(x => x.BlockUser)
+    .Where(x => x.BlockedById == __userId_0 && x.IsBlockedInGroup == True)
+    .Select(x => new GetBlockUserDto{ 
+        Id = x.Id, 
+        BlockedById = x.BlockedById, 
+        BlockedUserId = x.BlockedUserId, 
+        BlockedUserName = x.BlockUser.Name, 
+        IsBlockedInGroup = x.IsBlockedInGroup 
+    }
+    )'
+2024-02-11 00:20:42.9821 Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<GetBlockUserDto>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            Id -> 0
+            BlockedById -> 1
+            BlockedUserId -> 2
+            BlockedUserName -> 3
+            IsBlockedInGroup -> 4
+        SELECT b.Id, b.BlockedById, b.BlockedUserId, u.Name AS BlockedUserName, b.IsBlockedInGroup
+        FROM BlockedUsers AS b
+        INNER JOIN Users AS u ON b.BlockedUserId == u.Id
+        WHERE (b.BlockedById == @__userId_0) && (b.IsBlockedInGroup == CAST(1 AS bit))), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, GetBlockUserDto>, 
+    UserInteraction_Infrastructure.Data.UserInteractionDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-02-11 00:20:43.1869 Creating DbConnection.
+2024-02-11 00:20:43.3150 Created DbConnection. (114ms).
+2024-02-11 00:20:43.3150 Opening connection to database 'UserInteraction' on server 'LHR-TCH-UKHAN'.
+2024-02-11 00:20:44.6632 Opened connection to database 'UserInteraction' on server 'LHR-TCH-UKHAN'.
+2024-02-11 00:20:44.6806 Creating DbCommand for 'ExecuteReader'.
+2024-02-11 00:20:44.7057 Created DbCommand for 'ExecuteReader' (15ms).
+2024-02-11 00:20:44.7453 Initialized DbCommand for 'ExecuteReader' (66ms).
+2024-02-11 00:20:44.7988 Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [b].[Id], [b].[BlockedById], [b].[BlockedUserId], [u].[Name] AS [BlockedUserName], [b].[IsBlockedInGroup]
+FROM [BlockedUsers] AS [b]
+INNER JOIN [Users] AS [u] ON [b].[BlockedUserId] = [u].[Id]
+WHERE [b].[BlockedById] = @__userId_0 AND [b].[IsBlockedInGroup] = CAST(1 AS bit)
+2024-02-11 00:20:45.1665 Executed DbCommand (364ms) [Parameters=[@__userId_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [b].[Id], [b].[BlockedById], [b].[BlockedUserId], [u].[Name] AS [BlockedUserName], [b].[IsBlockedInGroup]
+FROM [BlockedUsers] AS [b]
+INNER JOIN [Users] AS [u] ON [b].[BlockedUserId] = [u].[Id]
+WHERE [b].[BlockedById] = @__userId_0 AND [b].[IsBlockedInGroup] = CAST(1 AS bit)
+2024-02-11 00:20:45.2466 Closing data reader to 'UserInteraction' on server 'LHR-TCH-UKHAN'.
+2024-02-11 00:20:45.3139 A data reader for 'UserInteraction' on server 'LHR-TCH-UKHAN' is being disposed after spending 95ms reading results.
+2024-02-11 00:20:45.3292 Closing connection to database 'UserInteraction' on server 'LHR-TCH-UKHAN'.
+2024-02-11 00:20:45.3580 Closed connection to database 'UserInteraction' on server 'LHR-TCH-UKHAN' (27ms).
+2024-02-11 00:20:45.3844 Executed action method UserInteraction_WebApi.Controllers.BlockUserController.GetAllGroupBlock (UserInteraction_WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10563.8427ms.
+2024-02-11 00:20:45.3844 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-11 00:20:45.3844 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-11 00:20:45.3844 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-11 00:20:45.3844 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-11 00:20:45.3844 Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-11 00:20:45.3844 Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-11 00:20:45.3844 Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-11 00:20:45.3844 List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-02-11 00:20:45.4059 No information found on request to perform content negotiation.
+2024-02-11 00:20:45.4059 Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-11 00:20:45.4059 Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-11 00:20:45.4059 Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-11 00:20:45.4059 Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[UserInteraction_Application.Dtos.BlockUsers.GetBlockUserDto, UserInteraction_Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-11 00:20:45.4363 After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-11 00:20:45.4363 Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-11 00:20:45.4363 Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-11 00:20:45.4570 Executed action UserInteraction_WebApi.Controllers.BlockUserController.GetAllGroupBlock (UserInteraction_WebApi) in 11375.753ms
+2024-02-11 00:20:45.4570 Executed endpoint 'UserInteraction_WebApi.Controllers.BlockUserController.GetAllGroupBlock (UserInteraction_WebApi)'
+2024-02-11 00:20:45.4644 Connection id "0HN1ADJT27J3Q" sending HEADERS frame for stream ID 1 with length 74 and flags END_HEADERS.
+2024-02-11 00:20:45.4644 Connection id "0HN1ADJT27J3Q" sending DATA frame for stream ID 1 with length 2 and flags NONE.
+2024-02-11 00:20:45.4644 Connection id "0HN1ADJT27J3Q" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM.
+2024-02-11 00:20:45.4644 'UserInteractionDbContext' disposed.
+2024-02-11 00:20:45.4644 Connection id "0HN1ADJT27J3Q" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-02-11 00:20:45.4906 Disposing connection to database 'UserInteraction' on server 'LHR-TCH-UKHAN'.
+2024-02-11 00:20:45.4906 Disposed connection to database '' on server '' (4ms).
+2024-02-11 11:30:52.2876 Executing endpoint 'UserInteraction_WebApi.Controllers.ChatController.Add (UserInteraction_WebApi)'
+2024-02-11 11:30:52.4281 Route matched with {action = "Add", controller = "Chat"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(UserInteraction_Application.Dtos.Chat.AddUpdateChatDto) on controller UserInteraction_WebApi.Controllers.ChatController (UserInteraction_WebApi).
+2024-02-11 11:30:52.4524 Execution plan of authorization filters (in the following order): None
+2024-02-11 11:30:52.4566 Execution plan of resource filters (in the following order): None
+2024-02-11 11:30:52.4566 Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-02-11 11:30:52.4566 Execution plan of exception filters (in the following order): None
+2024-02-11 11:30:52.4566 Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-02-11 11:30:52.4566 Executing controller factory for controller UserInteraction_WebApi.Controllers.ChatController (UserInteraction_WebApi)
+2024-02-11 11:30:52.5954 Executed controller factory for controller UserInteraction_WebApi.Controllers.ChatController (UserInteraction_WebApi)
+2024-02-11 11:30:52.6099 Attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.Chat.AddUpdateChatDto' ...
+2024-02-11 11:30:52.6163 Attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.Chat.AddUpdateChatDto' using the name '' in request data ...
+2024-02-11 11:30:52.6163 Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-02-11 11:30:52.6430 Connection id "0HN1AP1M0SMG4", Request id "0HN1AP1M0SMG4:00000007": started reading request body.
+2024-02-11 11:30:52.6434 Connection id "0HN1AP1M0SMG4", Request id "0HN1AP1M0SMG4:00000007": done reading request body.
+2024-02-11 11:30:52.6434 JSON input formatter succeeded, deserializing to type 'UserInteraction_Application.Dtos.Chat.AddUpdateChatDto'
+2024-02-11 11:30:52.6434 Done attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.Chat.AddUpdateChatDto'.
+2024-02-11 11:30:52.6434 Done attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.Chat.AddUpdateChatDto'.
+2024-02-11 11:30:52.6434 Attempting to validate the bound parameter 'model' of type 'UserInteraction_Application.Dtos.Chat.AddUpdateChatDto' ...
+2024-02-11 11:30:52.6616 Done attempting to validate the bound parameter 'model' of type 'UserInteraction_Application.Dtos.Chat.AddUpdateChatDto'.
+2024-02-11 11:30:52.6616 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-11 11:30:52.6616 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-11 11:30:52.6616 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-11 11:30:52.6616 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-11 11:30:52.6800 Executing action method UserInteraction_WebApi.Controllers.ChatController.Add (UserInteraction_WebApi) - Validation state: Valid
+2024-02-11 11:30:52.6800 Executing action method UserInteraction_WebApi.Controllers.ChatController.Add (UserInteraction_WebApi) with arguments (UserInteraction_Application.Dtos.Chat.AddUpdateChatDto)
+2024-02-11 11:31:00.3772 An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-11 11:31:02.5704 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-11 11:31:02.5704 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-11 11:31:02.5704 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-11 11:31:02.5704 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-11 11:31:02.5969 Executed action UserInteraction_WebApi.Controllers.ChatController.Add (UserInteraction_WebApi) in 10118.456ms
+2024-02-11 11:31:02.5969 Executed endpoint 'UserInteraction_WebApi.Controllers.ChatController.Add (UserInteraction_WebApi)'
+2024-02-11 11:31:03.0028 Invalid User
+2024-02-11 11:31:03.0263 Invalid User
+2024-02-11 11:31:03.0689 Connection id "0HN1AP1M0SMG4" sending HEADERS frame for stream ID 7 with length 51 and flags END_HEADERS.
+2024-02-11 11:31:03.0689 Connection id "0HN1AP1M0SMG4" sending DATA frame for stream ID 7 with length 26 and flags END_STREAM.
+2024-02-11 11:31:03.0689 Connection id "0HN1AP1M0SMG4" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-02-11 11:31:29.2850 Connection id "0HN1AP1M0SMG4" received HEADERS frame for stream ID 9 with length 35 and flags END_HEADERS, PRIORITY.
+2024-02-11 11:31:29.2850 Connection id "0HN1AP1M0SMG4" received PING frame for stream ID 0 with length 8 and flags NONE.
+2024-02-11 11:31:29.2850 Connection id "0HN1AP1M0SMG4" sending PING frame for stream ID 0 with length 8 and flags ACK.
+2024-02-11 11:31:29.2850 Connection id "0HN1AP1M0SMG4" received DATA frame for stream ID 9 with length 66 and flags END_STREAM.
+2024-02-11 11:31:29.3247 Request starting HTTP/2 POST https://localhost:7020/api/Chat/Add - application/json 66
+2024-02-11 11:31:29.3303 All hosts are allowed.
+2024-02-11 11:31:29.3587 1 candidate(s) found for the request path '/api/Chat/Add'
+2024-02-11 11:31:29.3630 Endpoint 'UserInteraction_WebApi.Controllers.ChatController.Add (UserInteraction_WebApi)' with route pattern 'api/Chat/Add' is valid for the request path '/api/Chat/Add'
+2024-02-11 11:31:29.3630 Request matched endpoint 'UserInteraction_WebApi.Controllers.ChatController.Add (UserInteraction_WebApi)'
+2024-02-11 11:31:29.3630 The endpoint does not specify the IRequestSizeLimitMetadata.
+2024-02-11 11:31:29.3630 Static files was skipped as the request already matched an endpoint.
+2024-02-11 11:31:29.3630 The request has an origin header: 'https://localhost:7020'.
+2024-02-11 11:31:29.3630 CORS policy execution failed.
+2024-02-11 11:31:29.3630 Request origin https://localhost:7020 does not have permission to access the resource.
+2024-02-11 11:31:29.3898 Successfully validated the token.
+2024-02-11 11:31:29.3898 AuthenticationScheme: Bearer was successfully authenticated.
+2024-02-11 11:31:29.3973 AuthenticationScheme: Bearer was successfully authenticated.
+2024-02-11 11:31:29.3973 Authorization was successful.
+2024-02-11 11:33:53.3819 Executing endpoint 'UserInteraction_WebApi.Controllers.ChatController.Add (UserInteraction_WebApi)'
+2024-02-11 11:33:53.3819 Route matched with {action = "Add", controller = "Chat"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(UserInteraction_Application.Dtos.Chat.AddUpdateChatDto) on controller UserInteraction_WebApi.Controllers.ChatController (UserInteraction_WebApi).
+2024-02-11 11:33:53.3819 Execution plan of authorization filters (in the following order): None
+2024-02-11 11:33:53.3819 Execution plan of resource filters (in the following order): None
+2024-02-11 11:33:53.3819 Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-02-11 11:33:53.3819 Execution plan of exception filters (in the following order): None
+2024-02-11 11:33:53.3819 Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-02-11 11:33:53.3819 Executing controller factory for controller UserInteraction_WebApi.Controllers.ChatController (UserInteraction_WebApi)
+2024-02-11 11:33:53.3819 Executed controller factory for controller UserInteraction_WebApi.Controllers.ChatController (UserInteraction_WebApi)
+2024-02-11 11:33:53.3819 Attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.Chat.AddUpdateChatDto' ...
+2024-02-11 11:33:53.3819 Attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.Chat.AddUpdateChatDto' using the name '' in request data ...
+2024-02-11 11:33:53.3819 Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-02-11 11:33:53.3819 Connection id "0HN1AP1M0SMG4", Request id "0HN1AP1M0SMG4:00000009": started reading request body.
+2024-02-11 11:33:53.3819 Connection id "0HN1AP1M0SMG4", Request id "0HN1AP1M0SMG4:00000009": done reading request body.
+2024-02-11 11:33:53.3819 JSON input formatter succeeded, deserializing to type 'UserInteraction_Application.Dtos.Chat.AddUpdateChatDto'
+2024-02-11 11:33:53.3819 Done attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.Chat.AddUpdateChatDto'.
+2024-02-11 11:33:53.3819 Done attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.Chat.AddUpdateChatDto'.
+2024-02-11 11:33:53.3819 Attempting to validate the bound parameter 'model' of type 'UserInteraction_Application.Dtos.Chat.AddUpdateChatDto' ...
+2024-02-11 11:33:53.3819 Done attempting to validate the bound parameter 'model' of type 'UserInteraction_Application.Dtos.Chat.AddUpdateChatDto'.
+2024-02-11 11:33:53.3819 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-11 11:33:53.3819 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-11 11:33:53.3819 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-11 11:33:53.3819 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-11 11:33:53.3819 Executing action method UserInteraction_WebApi.Controllers.ChatController.Add (UserInteraction_WebApi) - Validation state: Valid
+2024-02-11 11:33:53.3925 Executing action method UserInteraction_WebApi.Controllers.ChatController.Add (UserInteraction_WebApi) with arguments (UserInteraction_Application.Dtos.Chat.AddUpdateChatDto)
+2024-02-11 11:33:57.7648 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-11 11:33:57.7648 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-11 11:33:57.7648 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-11 11:33:57.7648 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-11 11:33:57.7681 Executed action UserInteraction_WebApi.Controllers.ChatController.Add (UserInteraction_WebApi) in 4383.7232ms
+2024-02-11 11:33:57.7681 Executed endpoint 'UserInteraction_WebApi.Controllers.ChatController.Add (UserInteraction_WebApi)'
+2024-02-11 11:33:58.1671 Invalid User
+2024-02-11 11:33:58.2280 Invalid User
+2024-02-11 11:33:58.2500 Connection id "0HN1AP1M0SMG4" sending HEADERS frame for stream ID 9 with length 34 and flags END_HEADERS.
+2024-02-11 11:33:58.2500 Connection id "0HN1AP1M0SMG4" sending DATA frame for stream ID 9 with length 26 and flags END_STREAM.
+2024-02-11 11:33:58.2529 Request finished HTTP/2 POST https://localhost:7020/api/Chat/Add - 500 - application/json 148960.8492ms
+2024-02-11 11:33:58.2855 Connection id "0HN1AP1M0SMG4" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-02-11 11:37:57.9659 Executing endpoint 'UserInteraction_WebApi.Controllers.ChatController.Add (UserInteraction_WebApi)'
+2024-02-11 11:37:58.1986 Route matched with {action = "Add", controller = "Chat"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(UserInteraction_Application.Dtos.Chat.AddUpdateChatDto) on controller UserInteraction_WebApi.Controllers.ChatController (UserInteraction_WebApi).
+2024-02-11 11:37:58.2448 Execution plan of authorization filters (in the following order): None
+2024-02-11 11:37:58.2448 Execution plan of resource filters (in the following order): None
+2024-02-11 11:37:58.2448 Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-02-11 11:37:58.2448 Execution plan of exception filters (in the following order): None
+2024-02-11 11:37:58.2448 Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-02-11 11:37:58.2602 Executing controller factory for controller UserInteraction_WebApi.Controllers.ChatController (UserInteraction_WebApi)
+2024-02-11 11:37:58.3650 Executed controller factory for controller UserInteraction_WebApi.Controllers.ChatController (UserInteraction_WebApi)
+2024-02-11 11:37:58.3816 Attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.Chat.AddUpdateChatDto' ...
+2024-02-11 11:37:58.3960 Attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.Chat.AddUpdateChatDto' using the name '' in request data ...
+2024-02-11 11:37:58.3960 Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-02-11 11:37:58.4316 Connection id "0HN1APEJAFRE0", Request id "0HN1APEJAFRE0:00000001": started reading request body.
+2024-02-11 11:37:58.4316 Connection id "0HN1APEJAFRE0", Request id "0HN1APEJAFRE0:00000001": done reading request body.
+2024-02-11 11:37:58.4631 JSON input formatter succeeded, deserializing to type 'UserInteraction_Application.Dtos.Chat.AddUpdateChatDto'
+2024-02-11 11:37:58.4631 Done attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.Chat.AddUpdateChatDto'.
+2024-02-11 11:37:58.4631 Done attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.Chat.AddUpdateChatDto'.
+2024-02-11 11:37:58.4631 Attempting to validate the bound parameter 'model' of type 'UserInteraction_Application.Dtos.Chat.AddUpdateChatDto' ...
+2024-02-11 11:37:58.4786 Done attempting to validate the bound parameter 'model' of type 'UserInteraction_Application.Dtos.Chat.AddUpdateChatDto'.
+2024-02-11 11:37:58.4786 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-11 11:37:58.4786 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-11 11:37:58.4786 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-11 11:37:58.4786 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-11 11:37:58.5160 Executing action method UserInteraction_WebApi.Controllers.ChatController.Add (UserInteraction_WebApi) - Validation state: Valid
+2024-02-11 11:37:58.5160 Executing action method UserInteraction_WebApi.Controllers.ChatController.Add (UserInteraction_WebApi) with arguments (UserInteraction_Application.Dtos.Chat.AddUpdateChatDto)
+2024-02-11 11:38:03.2795 An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-11 11:38:05.7781 No relationship from 'BlockedUser' to 'User' has been configured by convention because there are multiple properties on one entity type - {'BlockUser', 'User'} that could be matched with the properties on the other entity type - {'BlockedByUsers', 'BlockedUsers'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-11 11:38:06.3498 No relationship from 'Chat' to 'User' has been configured by convention because there are multiple properties on one entity type - {'Receiver', 'Sender'} that could be matched with the properties on the other entity type - {'Chats', 'ChatsReceived'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-11 11:38:06.4286 No relationship from 'User' to 'BlockedUser' has been configured by convention because there are multiple properties on one entity type - {'BlockedByUsers', 'BlockedUsers'} that could be matched with the properties on the other entity type - {'BlockUser', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-11 11:38:06.4286 No relationship from 'User' to 'Chat' has been configured by convention because there are multiple properties on one entity type - {'Chats', 'ChatsReceived'} that could be matched with the properties on the other entity type - {'Receiver', 'Sender'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-11 11:38:07.4799 No relationship from 'Chat' to 'User' has been configured by convention because there are multiple properties on one entity type - {'Receiver', 'Sender'} that could be matched with the properties on the other entity type - {'Chats', 'ChatsReceived'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-11 11:38:07.4799 No relationship from 'User' to 'BlockedUser' has been configured by convention because there are multiple properties on one entity type - {'BlockedByUsers', 'BlockedUsers'} that could be matched with the properties on the other entity type - {'BlockUser', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-11 11:38:07.4870 No relationship from 'User' to 'Chat' has been configured by convention because there are multiple properties on one entity type - {'Chats', 'ChatsReceived'} that could be matched with the properties on the other entity type - {'Receiver', 'Sender'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-11 11:38:07.5156 No relationship from 'User' to 'BlockedUser' has been configured by convention because there are multiple properties on one entity type - {'BlockedByUsers', 'BlockedUsers'} that could be matched with the properties on the other entity type - {'BlockUser', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-11 11:38:07.6307 No relationship from 'BlockedUser' to 'User' has been configured by convention because there are multiple properties on one entity type - {'BlockUser', 'User'} that could be matched with the properties on the other entity type - {'BlockedByUsers', 'BlockedUsers'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-11 11:38:07.6307 No relationship from 'User' to 'BlockedUser' has been configured by convention because there are multiple properties on one entity type - {'BlockedByUsers', 'BlockedUsers'} that could be matched with the properties on the other entity type - {'BlockUser', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-11 11:38:09.3933 Entity Framework Core 8.0.0 initialized 'UserInteractionDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-02-11 11:38:09.6996 Compiling query expression: 
+'DbSet<BlockedUser>()
+    .Where(x => !(x.IsBlockedInGroup) && x.BlockedById == __userId_0 && x.BlockedUserId == __model_ReceiverId_1 || x.BlockedById == __model_ReceiverId_1 && x.BlockedUserId == __userId_0)'
+2024-02-11 11:38:10.9166 Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<BlockedUser>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: BlockedUser.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: BlockedUser.BlockedById (long) Required FK Index, 1], [Property: BlockedUser.BlockedUserId (long) Required FK Index, 2], [Property: BlockedUser.CreatedBy (long) Required, 3], [Property: BlockedUser.CreatedDate (DateTime) Required, 4], [Property: BlockedUser.GroupId (long?) FK Index, 5], [Property: BlockedUser.IsActive (bool) Required, 6], [Property: BlockedUser.IsBlockedInGroup (bool) Required, 7], [Property: BlockedUser.IsDeleted (bool) Required, 8], [Property: BlockedUser.UpdatedBy (long?), 9], [Property: BlockedUser.UpdatedDate (DateTime?), 10] }
+        SELECT b.Id, b.BlockedById, b.BlockedUserId, b.CreatedBy, b.CreatedDate, b.GroupId, b.IsActive, b.IsBlockedInGroup, b.IsDeleted, b.UpdatedBy, b.UpdatedDate
+        FROM BlockedUsers AS b
+        WHERE Not(b.IsBlockedInGroup) && (((b.BlockedById == @__userId_0) && (b.BlockedUserId == @__model_ReceiverId_1)) || ((b.BlockedById == @__model_ReceiverId_1) && (b.BlockedUserId == @__userId_0)))), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, BlockedUser>, 
+    UserInteraction_Infrastructure.Data.UserInteractionDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-02-11 11:38:11.1726 Creating DbConnection.
+2024-02-11 11:38:11.3089 Created DbConnection. (120ms).
+2024-02-11 11:38:11.3281 Opening connection to database 'UserInteraction' on server 'LHR-TCH-UKHAN'.
+2024-02-11 11:38:13.0956 Opened connection to database 'UserInteraction' on server 'LHR-TCH-UKHAN'.
+2024-02-11 11:38:13.1157 Creating DbCommand for 'ExecuteReader'.
+2024-02-11 11:38:13.1541 Created DbCommand for 'ExecuteReader' (23ms).
+2024-02-11 11:38:13.1873 Initialized DbCommand for 'ExecuteReader' (74ms).
+2024-02-11 11:38:13.2373 Executing DbCommand [Parameters=[@__userId_0='?' (DbType = Int64), @__model_ReceiverId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [b].[Id], [b].[BlockedById], [b].[BlockedUserId], [b].[CreatedBy], [b].[CreatedDate], [b].[GroupId], [b].[IsActive], [b].[IsBlockedInGroup], [b].[IsDeleted], [b].[UpdatedBy], [b].[UpdatedDate]
+FROM [BlockedUsers] AS [b]
+WHERE [b].[IsBlockedInGroup] = CAST(0 AS bit) AND (([b].[BlockedById] = @__userId_0 AND [b].[BlockedUserId] = @__model_ReceiverId_1) OR ([b].[BlockedById] = @__model_ReceiverId_1 AND [b].[BlockedUserId] = @__userId_0))
+2024-02-11 11:38:13.7127 Executed DbCommand (435ms) [Parameters=[@__userId_0='?' (DbType = Int64), @__model_ReceiverId_1='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [b].[Id], [b].[BlockedById], [b].[BlockedUserId], [b].[CreatedBy], [b].[CreatedDate], [b].[GroupId], [b].[IsActive], [b].[IsBlockedInGroup], [b].[IsDeleted], [b].[UpdatedBy], [b].[UpdatedDate]
+FROM [BlockedUsers] AS [b]
+WHERE [b].[IsBlockedInGroup] = CAST(0 AS bit) AND (([b].[BlockedById] = @__userId_0 AND [b].[BlockedUserId] = @__model_ReceiverId_1) OR ([b].[BlockedById] = @__model_ReceiverId_1 AND [b].[BlockedUserId] = @__userId_0))
+2024-02-11 11:38:13.8314 Closing data reader to 'UserInteraction' on server 'LHR-TCH-UKHAN'.
+2024-02-11 11:38:13.8706 A data reader for 'UserInteraction' on server 'LHR-TCH-UKHAN' is being disposed after spending 131ms reading results.
+2024-02-11 11:38:13.8888 Closing connection to database 'UserInteraction' on server 'LHR-TCH-UKHAN'.
+2024-02-11 11:38:13.9229 Closed connection to database 'UserInteraction' on server 'LHR-TCH-UKHAN' (35ms).
+2024-02-11 11:38:39.1685 'UserInteractionDbContext' generated a temporary value for the property 'Chat.Id'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-11 11:38:39.5244 Context 'UserInteractionDbContext' started tracking 'Chat' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-11 11:38:39.5444 SaveChanges starting for 'UserInteractionDbContext'.
+2024-02-11 11:38:39.5585 DetectChanges starting for 'UserInteractionDbContext'.
+2024-02-11 11:38:39.6886 DetectChanges completed for 'UserInteractionDbContext'.
+2024-02-11 11:38:40.2833 Opening connection to database 'UserInteraction' on server 'LHR-TCH-UKHAN'.
+2024-02-11 11:38:40.2833 Opened connection to database 'UserInteraction' on server 'LHR-TCH-UKHAN'.
+2024-02-11 11:38:40.3025 Creating DbCommand for 'ExecuteReader'.
+2024-02-11 11:38:40.3025 Created DbCommand for 'ExecuteReader' (0ms).
+2024-02-11 11:38:40.3025 Initialized DbCommand for 'ExecuteReader' (4ms).
+2024-02-11 11:38:40.3025 Executing DbCommand [Parameters=[@p0='?' (DbType = Int64), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Int64), @p6='?' (DbType = Int64), @p7='?' (DbType = Int64), @p8='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Chats] ([CreatedBy], [CreatedDate], [IsActive], [IsDeleted], [Message], [ReceiverId], [SenderId], [UpdatedBy], [UpdatedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2024-02-11 11:38:40.4106 Executed DbCommand (91ms) [Parameters=[@p0='?' (DbType = Int64), @p1='?' (DbType = DateTime2), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Int64), @p6='?' (DbType = Int64), @p7='?' (DbType = Int64), @p8='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Chats] ([CreatedBy], [CreatedDate], [IsActive], [IsDeleted], [Message], [ReceiverId], [SenderId], [UpdatedBy], [UpdatedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2024-02-11 11:38:40.4866 The foreign key property 'Chat.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-02-11 11:38:40.5330 Closing data reader to 'UserInteraction' on server 'LHR-TCH-UKHAN'.
+2024-02-11 11:38:40.5330 A data reader for 'UserInteraction' on server 'LHR-TCH-UKHAN' is being disposed after spending 122ms reading results.
+2024-02-11 11:38:40.5393 Closing connection to database 'UserInteraction' on server 'LHR-TCH-UKHAN'.
+2024-02-11 11:38:40.5393 Closed connection to database 'UserInteraction' on server 'LHR-TCH-UKHAN' (0ms).
+2024-02-11 11:38:40.5952 An entity of type 'Chat' tracked by 'UserInteractionDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-11 11:38:40.6231 SaveChanges completed for 'UserInteractionDbContext' with 1 entities written to the database.
+2024-02-11 11:38:40.7012 Compiling query expression: 
+'DbSet<Chat>()
+    .Include(x => x.Sender)
+    .Include(x => x.Receiver)
+    .Where(x => x.Id == __com_Id_0)
+    .Select(x => new ChatNotificationDto{ 
+        Id = x.Id, 
+        SenderId = x.SenderId, 
+        SenderName = x.Sender.Name, 
+        ReceiverId = x.ReceiverId, 
+        ReceiverName = x.Receiver.Name, 
+        Message = x.Message, 
+        Attachments = x.ChatAttachments
+            .Select(att => new ChatAttachmentNoticationDto{ 
+                Id = att.Id, 
+                MediaType = att.MediaType, 
+                Name = att.Name, 
+                AttachmentUrl = att.AttachmentUrl, 
+                ChatId = att.ChatId 
+            }
+            )
+            .ToList() 
+    }
+    )
+    .FirstOrDefault()'
+2024-02-11 11:38:41.2788 Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<ChatNotificationDto>(
+    asyncEnumerable: new SingleQueryingEnumerable<ChatNotificationDto>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Client Projections:
+                0 -> 0
+                1 -> 1
+                2 -> 2
+                3 -> 3
+                4 -> 4
+                5 -> 5
+                6 -> 6
+                7 -> 7
+                8 -> 8
+                9 -> 9
+                10 -> 10
+                11 -> 11
+                12 -> 12
+            SELECT t.Id, t.SenderId, t.Name, t.ReceiverId, t.Name0, t.Message, t.Id0, t.Id1, c0.Id, c0.MediaType, c0.Name, c0.AttachmentUrl, c0.ChatId
+            FROM 
+            (
+                SELECT TOP(1) c.Id, c.SenderId, u.Name, c.ReceiverId, u0.Name AS Name0, c.Message, u.Id AS Id0, u0.Id AS Id1
+                FROM Chats AS c
+                INNER JOIN Users AS u ON c.SenderId == u.Id
+                INNER JOIN Users AS u0 ON c.ReceiverId == u0.Id
+                WHERE c.Id == @__com_Id_0
+            ) AS t
+            LEFT JOIN ChatAttachments AS c0 ON t.Id == c0.ChatId
+            ORDER BY t.Id ASC, t.Id0 ASC, t.Id1 ASC), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, ChatNotificationDto>, 
+        UserInteraction_Infrastructure.Data.UserInteractionDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2024-02-11 11:38:41.3037 Opening connection to database 'UserInteraction' on server 'LHR-TCH-UKHAN'.
+2024-02-11 11:38:41.3037 Opened connection to database 'UserInteraction' on server 'LHR-TCH-UKHAN'.
+2024-02-11 11:38:41.3037 Creating DbCommand for 'ExecuteReader'.
+2024-02-11 11:38:41.3037 Created DbCommand for 'ExecuteReader' (5ms).
+2024-02-11 11:38:41.3037 Initialized DbCommand for 'ExecuteReader' (6ms).
+2024-02-11 11:38:41.3037 Executing DbCommand [Parameters=[@__com_Id_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[SenderId], [t].[Name], [t].[ReceiverId], [t].[Name0], [t].[Message], [t].[Id0], [t].[Id1], [c0].[Id], [c0].[MediaType], [c0].[Name], [c0].[AttachmentUrl], [c0].[ChatId]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[SenderId], [u].[Name], [c].[ReceiverId], [u0].[Name] AS [Name0], [c].[Message], [u].[Id] AS [Id0], [u0].[Id] AS [Id1]
+    FROM [Chats] AS [c]
+    INNER JOIN [Users] AS [u] ON [c].[SenderId] = [u].[Id]
+    INNER JOIN [Users] AS [u0] ON [c].[ReceiverId] = [u0].[Id]
+    WHERE [c].[Id] = @__com_Id_0
+) AS [t]
+LEFT JOIN [ChatAttachments] AS [c0] ON [t].[Id] = [c0].[ChatId]
+ORDER BY [t].[Id], [t].[Id0], [t].[Id1]
+2024-02-11 11:38:41.3525 Executed DbCommand (29ms) [Parameters=[@__com_Id_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[SenderId], [t].[Name], [t].[ReceiverId], [t].[Name0], [t].[Message], [t].[Id0], [t].[Id1], [c0].[Id], [c0].[MediaType], [c0].[Name], [c0].[AttachmentUrl], [c0].[ChatId]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[SenderId], [u].[Name], [c].[ReceiverId], [u0].[Name] AS [Name0], [c].[Message], [u].[Id] AS [Id0], [u0].[Id] AS [Id1]
+    FROM [Chats] AS [c]
+    INNER JOIN [Users] AS [u] ON [c].[SenderId] = [u].[Id]
+    INNER JOIN [Users] AS [u0] ON [c].[ReceiverId] = [u0].[Id]
+    WHERE [c].[Id] = @__com_Id_0
+) AS [t]
+LEFT JOIN [ChatAttachments] AS [c0] ON [t].[Id] = [c0].[ChatId]
+ORDER BY [t].[Id], [t].[Id0], [t].[Id1]
+2024-02-11 11:38:41.3780 Closing data reader to 'UserInteraction' on server 'LHR-TCH-UKHAN'.
+2024-02-11 11:38:41.3780 A data reader for 'UserInteraction' on server 'LHR-TCH-UKHAN' is being disposed after spending 25ms reading results.
+2024-02-11 11:38:41.3780 Closing connection to database 'UserInteraction' on server 'LHR-TCH-UKHAN'.
+2024-02-11 11:38:41.3780 Closed connection to database 'UserInteraction' on server 'LHR-TCH-UKHAN' (0ms).
+2024-02-11 11:38:46.3865 Executed action method UserInteraction_WebApi.Controllers.ChatController.Add (UserInteraction_WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 47846.8856ms.
+2024-02-11 11:38:46.3865 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-11 11:38:46.3865 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-11 11:38:46.3937 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-11 11:38:46.3937 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-11 11:38:46.3937 Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-11 11:38:46.3937 Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-11 11:38:46.3937 Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-11 11:38:46.4088 List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-02-11 11:38:46.4088 No information found on request to perform content negotiation.
+2024-02-11 11:38:46.4088 Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-11 11:38:46.4088 Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-11 11:38:46.4088 Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-11 11:38:46.4246 Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-11 11:38:46.4448 After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-11 11:38:46.4448 Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-11 11:38:46.4448 Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-11 11:38:46.4662 Connection id "0HN1APEJAFRE0" sending HEADERS frame for stream ID 1 with length 74 and flags END_HEADERS.
+2024-02-11 11:38:46.4662 Connection id "0HN1APEJAFRE0" sending DATA frame for stream ID 1 with length 37 and flags NONE.
+2024-02-11 11:38:46.4662 Executed action UserInteraction_WebApi.Controllers.ChatController.Add (UserInteraction_WebApi) in 48196.9265ms
+2024-02-11 11:38:46.4725 Executed endpoint 'UserInteraction_WebApi.Controllers.ChatController.Add (UserInteraction_WebApi)'
+2024-02-11 11:38:46.4725 Connection id "0HN1APEJAFRE0" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM.
+2024-02-11 11:38:46.4886 'UserInteractionDbContext' disposed.
+2024-02-11 11:38:46.4886 Connection id "0HN1APEJAFRE0" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-02-11 11:38:46.5120 Disposing connection to database 'UserInteraction' on server 'LHR-TCH-UKHAN'.
+2024-02-11 11:38:46.5181 Disposed connection to database '' on server '' (5ms).

@@ -1,0 +1,1039 @@
+2024-02-26 17:28:19.9519 Executing endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.Add (UserInteraction_WebApi)'
+2024-02-26 17:28:20.1766 Route matched with {action = "Add", controller = "CommonNotification"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto) on controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi).
+2024-02-26 17:28:20.2117 Execution plan of authorization filters (in the following order): None
+2024-02-26 17:28:20.2117 Execution plan of resource filters (in the following order): None
+2024-02-26 17:28:20.2117 Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000), CommonService.Filters.TokenToUserIdActionFilter
+2024-02-26 17:28:20.2207 Execution plan of exception filters (in the following order): None
+2024-02-26 17:28:20.2207 Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-02-26 17:28:20.2207 Executing controller factory for controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi)
+2024-02-26 17:28:20.3336 Executed controller factory for controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi)
+2024-02-26 17:28:20.3512 Attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto' ...
+2024-02-26 17:28:20.3652 Attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto' using the name '' in request data ...
+2024-02-26 17:28:20.3652 Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-02-26 17:28:20.4270 Connection id "0HN1MOO3P7UH9", Request id "0HN1MOO3P7UH9:00000001": started reading request body.
+2024-02-26 17:28:20.4270 Connection id "0HN1MOO3P7UH9", Request id "0HN1MOO3P7UH9:00000001": done reading request body.
+2024-02-26 17:28:20.4617 JSON input formatter succeeded, deserializing to type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto'
+2024-02-26 17:28:20.4617 Done attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto'.
+2024-02-26 17:28:20.4617 Done attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto'.
+2024-02-26 17:28:20.4617 Attempting to validate the bound parameter 'model' of type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto' ...
+2024-02-26 17:28:20.4824 Done attempting to validate the bound parameter 'model' of type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto'.
+2024-02-26 17:28:20.4941 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:28:20.4941 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:28:20.4941 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:28:20.4941 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:28:20.4941 Action Filter: Before executing OnActionExecutionAsync on filter CommonService.Filters.TokenToUserIdActionFilter.
+2024-02-26 17:28:20.5277 Executing action method UserInteraction_WebApi.Controllers.CommonNotificationController.Add (UserInteraction_WebApi) - Validation state: Valid
+2024-02-26 17:28:20.5277 Executing action method UserInteraction_WebApi.Controllers.CommonNotificationController.Add (UserInteraction_WebApi) with arguments (UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto)
+2024-02-26 17:28:21.2179 An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-26 17:28:23.1539 No relationship from 'BlockedUser' to 'User' has been configured by convention because there are multiple properties on one entity type - {'BlockUser', 'User'} that could be matched with the properties on the other entity type - {'BlockedByUsers', 'BlockedUsers'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-26 17:28:23.5466 No relationship from 'Chat' to 'User' has been configured by convention because there are multiple properties on one entity type - {'Receiver', 'Sender'} that could be matched with the properties on the other entity type - {'Chats', 'ChatsReceived'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-26 17:28:23.5807 No relationship from 'User' to 'BlockedUser' has been configured by convention because there are multiple properties on one entity type - {'BlockedByUsers', 'BlockedUsers'} that could be matched with the properties on the other entity type - {'BlockUser', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-26 17:28:23.5807 No relationship from 'User' to 'Chat' has been configured by convention because there are multiple properties on one entity type - {'Chats', 'ChatsReceived'} that could be matched with the properties on the other entity type - {'Receiver', 'Sender'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-26 17:28:24.2936 No relationship from 'Chat' to 'User' has been configured by convention because there are multiple properties on one entity type - {'Receiver', 'Sender'} that could be matched with the properties on the other entity type - {'Chats', 'ChatsReceived'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-26 17:28:24.3060 No relationship from 'User' to 'BlockedUser' has been configured by convention because there are multiple properties on one entity type - {'BlockedByUsers', 'BlockedUsers'} that could be matched with the properties on the other entity type - {'BlockUser', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-26 17:28:24.3060 No relationship from 'User' to 'Chat' has been configured by convention because there are multiple properties on one entity type - {'Chats', 'ChatsReceived'} that could be matched with the properties on the other entity type - {'Receiver', 'Sender'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-26 17:28:24.3309 No relationship from 'User' to 'BlockedUser' has been configured by convention because there are multiple properties on one entity type - {'BlockedByUsers', 'BlockedUsers'} that could be matched with the properties on the other entity type - {'BlockUser', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-26 17:28:24.4645 No relationship from 'BlockedUser' to 'User' has been configured by convention because there are multiple properties on one entity type - {'BlockUser', 'User'} that could be matched with the properties on the other entity type - {'BlockedByUsers', 'BlockedUsers'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-26 17:28:24.4645 No relationship from 'User' to 'BlockedUser' has been configured by convention because there are multiple properties on one entity type - {'BlockedByUsers', 'BlockedUsers'} that could be matched with the properties on the other entity type - {'BlockUser', 'User'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-02-26 17:28:27.3092 Entity Framework Core 7.0.0 initialized 'UserInteractionDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0' with options: None
+2024-02-26 17:28:27.5448 '"UserInteractionDbContext"' generated a temporary value for the property '"Id"."CommonNotification"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 17:28:28.1253 Context 'UserInteractionDbContext' started tracking 'CommonNotification' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 17:28:28.1508 SaveChanges starting for 'UserInteractionDbContext'.
+2024-02-26 17:28:28.1726 DetectChanges starting for 'UserInteractionDbContext'.
+2024-02-26 17:28:28.3113 DetectChanges completed for 'UserInteractionDbContext'.
+2024-02-26 17:28:28.6734 Creating DbConnection.
+2024-02-26 17:28:28.9516 Created DbConnection. (279ms).
+2024-02-26 17:28:28.9776 Opening connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:28:30.4700 Opened connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:28:30.5103 Creating DbCommand for 'ExecuteReader'.
+2024-02-26 17:28:30.5601 Created DbCommand for 'ExecuteReader' (23ms).
+2024-02-26 17:28:30.6387 Initialized DbCommand for 'ExecuteReader' (128ms).
+2024-02-26 17:28:30.6887 Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int64), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (DbType = Int64), @p8='?' (DbType = Int64), @p9='?' (DbType = Int32), @p10='?' (Size = 255), @p11='?' (DbType = Int32), @p12='?' (DbType = Int64), @p13='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CommonNotifications] ([Audience], [CreatedBy], [CreatedDate], [IsActive], [IsDeleted], [IsRead], [Message], [ReceiverId], [SenderId], [SenderType], [Title], [TypeInt], [UpdatedBy], [UpdatedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);
+2024-02-26 17:28:31.2393 Executed DbCommand (531ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int64), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (DbType = Int64), @p8='?' (DbType = Int64), @p9='?' (DbType = Int32), @p10='?' (Size = 255), @p11='?' (DbType = Int32), @p12='?' (DbType = Int64), @p13='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CommonNotifications] ([Audience], [CreatedBy], [CreatedDate], [IsActive], [IsDeleted], [IsRead], [Message], [ReceiverId], [SenderId], [SenderType], [Title], [TypeInt], [UpdatedBy], [UpdatedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);
+2024-02-26 17:28:31.3751 The foreign key property 'CommonNotification.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-02-26 17:28:31.4257 Closing data reader to 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:28:31.4741 A data reader for 'UserInteraction2' on server 'LHR-TCH-UKHAN' is being disposed after spending 200ms reading results.
+2024-02-26 17:28:31.4993 Closing connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:28:31.5339 Closed connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN' (35ms).
+2024-02-26 17:28:31.6261 An entity of type 'CommonNotification' tracked by 'UserInteractionDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 17:28:31.6396 SaveChanges completed for 'UserInteractionDbContext' with 1 entities written to the database.
+2024-02-26 17:28:47.6939 Executed action method UserInteraction_WebApi.Controllers.CommonNotificationController.Add (UserInteraction_WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 27149.1291ms.
+2024-02-26 17:28:47.6939 Action Filter: After executing OnActionExecutionAsync on filter CommonService.Filters.TokenToUserIdActionFilter.
+2024-02-26 17:28:47.6939 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:28:47.6939 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:28:47.7046 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:28:47.7046 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:28:47.7046 Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:28:47.7046 Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:28:47.7230 Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 17:28:47.7230 List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-02-26 17:28:47.7394 No information found on request to perform content negotiation.
+2024-02-26 17:28:47.7394 Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-26 17:28:47.7394 Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-26 17:28:47.7394 Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-26 17:28:47.7394 Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-26 17:28:47.7733 After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 17:28:47.7733 Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:28:47.7733 Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:28:47.7971 Executed action UserInteraction_WebApi.Controllers.CommonNotificationController.Add (UserInteraction_WebApi) in 27559.5293ms
+2024-02-26 17:28:47.8000 Executed endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.Add (UserInteraction_WebApi)'
+2024-02-26 17:28:47.8000 Connection id "0HN1MOO3P7UH9" completed keep alive response.
+2024-02-26 17:28:47.8210 'UserInteractionDbContext' disposed.
+2024-02-26 17:28:47.8623 Disposing connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:28:47.8623 Disposed connection to database '' on server '' (17ms).
+2024-02-26 17:28:55.7353 Connection id "0HN1MOO3P7UH9" received FIN.
+2024-02-26 17:28:55.7361 Connection id "0HN1MOO3P7UH9" disconnecting.
+2024-02-26 17:28:55.7361 Connection id "0HN1MOO3P7UH9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-26 17:28:55.7361 Connection id "0HN1MOO3P7UH9" stopped.
+2024-02-26 17:29:00.5022 Connection id "0HN1MOO3P7UHA" accepted.
+2024-02-26 17:29:00.5022 Connection id "0HN1MOO3P7UHA" started.
+2024-02-26 17:29:00.5185 Request starting HTTP/1.1 POST http://localhost:5107/api/CommonNotification/Add application/json 136
+2024-02-26 17:29:00.5185 All hosts are allowed.
+2024-02-26 17:29:00.5503 1 candidate(s) found for the request path '/api/CommonNotification/Add'
+2024-02-26 17:29:00.5503 Endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.Add (UserInteraction_WebApi)' with route pattern 'api/CommonNotification/Add' is valid for the request path '/api/CommonNotification/Add'
+2024-02-26 17:29:00.5503 Request matched endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.Add (UserInteraction_WebApi)'
+2024-02-26 17:29:00.5503 Static files was skipped as the request already matched an endpoint.
+2024-02-26 17:29:00.5683 The request has an origin header: 'http://localhost:5107'.
+2024-02-26 17:29:00.5683 CORS policy execution failed.
+2024-02-26 17:29:00.5683 Request origin http://localhost:5107 does not have permission to access the resource.
+2024-02-26 17:29:00.5945 Successfully validated the token.
+2024-02-26 17:29:00.5945 AuthenticationScheme: Bearer was successfully authenticated.
+2024-02-26 17:29:00.6016 AuthenticationScheme: Bearer was successfully authenticated.
+2024-02-26 17:29:00.6016 Authorization was successful.
+2024-02-26 17:29:00.7012 Executing endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.Add (UserInteraction_WebApi)'
+2024-02-26 17:29:00.7164 Route matched with {action = "Add", controller = "CommonNotification"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto) on controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi).
+2024-02-26 17:29:00.7164 Execution plan of authorization filters (in the following order): None
+2024-02-26 17:29:00.7164 Execution plan of resource filters (in the following order): None
+2024-02-26 17:29:00.7164 Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000), CommonService.Filters.TokenToUserIdActionFilter
+2024-02-26 17:29:00.7164 Execution plan of exception filters (in the following order): None
+2024-02-26 17:29:00.7164 Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-02-26 17:29:00.7164 Executing controller factory for controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi)
+2024-02-26 17:29:00.7164 Executed controller factory for controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi)
+2024-02-26 17:29:00.7236 Attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto' ...
+2024-02-26 17:29:00.7236 Attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto' using the name '' in request data ...
+2024-02-26 17:29:00.7236 Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-02-26 17:29:00.7236 Connection id "0HN1MOO3P7UHA", Request id "0HN1MOO3P7UHA:00000001": started reading request body.
+2024-02-26 17:29:00.7236 Connection id "0HN1MOO3P7UHA", Request id "0HN1MOO3P7UHA:00000001": done reading request body.
+2024-02-26 17:29:00.7236 JSON input formatter succeeded, deserializing to type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto'
+2024-02-26 17:29:00.7236 Done attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto'.
+2024-02-26 17:29:00.7236 Done attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto'.
+2024-02-26 17:29:00.7236 Attempting to validate the bound parameter 'model' of type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto' ...
+2024-02-26 17:29:00.7236 Done attempting to validate the bound parameter 'model' of type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto'.
+2024-02-26 17:29:00.7236 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:29:00.7236 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:29:00.7236 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:29:00.7236 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:29:00.7236 Action Filter: Before executing OnActionExecutionAsync on filter CommonService.Filters.TokenToUserIdActionFilter.
+2024-02-26 17:29:00.7236 Executing action method UserInteraction_WebApi.Controllers.CommonNotificationController.Add (UserInteraction_WebApi) - Validation state: Valid
+2024-02-26 17:29:00.7236 Executing action method UserInteraction_WebApi.Controllers.CommonNotificationController.Add (UserInteraction_WebApi) with arguments (UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto)
+2024-02-26 17:29:01.1616 Entity Framework Core 7.0.0 initialized 'UserInteractionDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0' with options: None
+2024-02-26 17:29:01.1616 '"UserInteractionDbContext"' generated a temporary value for the property '"Id"."CommonNotification"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 17:29:01.1756 Context 'UserInteractionDbContext' started tracking 'CommonNotification' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 17:29:01.1756 SaveChanges starting for 'UserInteractionDbContext'.
+2024-02-26 17:29:01.1756 DetectChanges starting for 'UserInteractionDbContext'.
+2024-02-26 17:29:01.1756 DetectChanges completed for 'UserInteractionDbContext'.
+2024-02-26 17:29:01.1951 Creating DbConnection.
+2024-02-26 17:29:01.1951 Created DbConnection. (1ms).
+2024-02-26 17:29:01.1951 Opening connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:29:01.1951 Opened connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:29:01.2053 Creating DbCommand for 'ExecuteReader'.
+2024-02-26 17:29:01.2053 Created DbCommand for 'ExecuteReader' (3ms).
+2024-02-26 17:29:01.2053 Initialized DbCommand for 'ExecuteReader' (4ms).
+2024-02-26 17:29:01.2053 Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int64), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (DbType = Int64), @p8='?' (DbType = Int64), @p9='?' (DbType = Int32), @p10='?' (Size = 255), @p11='?' (DbType = Int32), @p12='?' (DbType = Int64), @p13='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CommonNotifications] ([Audience], [CreatedBy], [CreatedDate], [IsActive], [IsDeleted], [IsRead], [Message], [ReceiverId], [SenderId], [SenderType], [Title], [TypeInt], [UpdatedBy], [UpdatedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);
+2024-02-26 17:29:01.7684 Executed DbCommand (525ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int64), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (DbType = Int64), @p8='?' (DbType = Int64), @p9='?' (DbType = Int32), @p10='?' (Size = 255), @p11='?' (DbType = Int32), @p12='?' (DbType = Int64), @p13='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CommonNotifications] ([Audience], [CreatedBy], [CreatedDate], [IsActive], [IsDeleted], [IsRead], [Message], [ReceiverId], [SenderId], [SenderType], [Title], [TypeInt], [UpdatedBy], [UpdatedDate])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);
+2024-02-26 17:29:01.7684 The foreign key property 'CommonNotification.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-02-26 17:29:01.7684 Closing data reader to 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:29:01.7684 A data reader for 'UserInteraction2' on server 'LHR-TCH-UKHAN' is being disposed after spending 5ms reading results.
+2024-02-26 17:29:01.7684 Closing connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:29:01.7684 Closed connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN' (0ms).
+2024-02-26 17:29:01.7684 An entity of type 'CommonNotification' tracked by 'UserInteractionDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 17:29:01.7684 SaveChanges completed for 'UserInteractionDbContext' with 1 entities written to the database.
+2024-02-26 17:29:06.6750 Executed action method UserInteraction_WebApi.Controllers.CommonNotificationController.Add (UserInteraction_WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5940.4367ms.
+2024-02-26 17:29:06.6750 Action Filter: After executing OnActionExecutionAsync on filter CommonService.Filters.TokenToUserIdActionFilter.
+2024-02-26 17:29:06.6750 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:29:06.6750 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:29:06.6750 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:29:06.6750 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:29:06.6750 Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:29:06.6750 Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:29:06.6750 Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 17:29:06.6750 List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-02-26 17:29:06.6750 No information found on request to perform content negotiation.
+2024-02-26 17:29:06.6750 Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-26 17:29:06.6750 Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-26 17:29:06.6750 Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-26 17:29:06.6750 Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-26 17:29:06.6892 After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 17:29:06.6892 Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:29:06.6892 Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:29:06.6892 Executed action UserInteraction_WebApi.Controllers.CommonNotificationController.Add (UserInteraction_WebApi) in 5972.7662ms
+2024-02-26 17:29:06.6892 Executed endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.Add (UserInteraction_WebApi)'
+2024-02-26 17:29:06.6892 Connection id "0HN1MOO3P7UHA" completed keep alive response.
+2024-02-26 17:29:06.6892 'UserInteractionDbContext' disposed.
+2024-02-26 17:29:06.6892 Disposing connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:29:06.6892 Disposed connection to database '' on server '' (0ms).
+2024-02-26 17:29:06.6892 Request finished HTTP/1.1 POST http://localhost:5107/api/CommonNotification/Add application/json 136 - 200 - application/json;+charset=utf-8 6187.6772ms
+2024-02-26 17:29:13.5905 Request starting HTTP/1.1 GET http://localhost:5107/api/CommonNotification/GetAll - -
+2024-02-26 17:29:13.5905 All hosts are allowed.
+2024-02-26 17:29:13.5905 1 candidate(s) found for the request path '/api/CommonNotification/GetAll'
+2024-02-26 17:29:13.5905 Endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.GetAll (UserInteraction_WebApi)' with route pattern 'api/CommonNotification/GetAll' is valid for the request path '/api/CommonNotification/GetAll'
+2024-02-26 17:29:13.5905 Request matched endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.GetAll (UserInteraction_WebApi)'
+2024-02-26 17:29:13.5905 Static files was skipped as the request already matched an endpoint.
+2024-02-26 17:29:13.6009 Successfully validated the token.
+2024-02-26 17:29:13.6009 AuthenticationScheme: Bearer was successfully authenticated.
+2024-02-26 17:29:13.6009 AuthenticationScheme: Bearer was successfully authenticated.
+2024-02-26 17:29:13.6009 Authorization was successful.
+2024-02-26 17:29:13.6009 Executing endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.GetAll (UserInteraction_WebApi)'
+2024-02-26 17:29:13.6406 Route matched with {action = "GetAll", controller = "CommonNotification"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi).
+2024-02-26 17:29:13.6406 Execution plan of authorization filters (in the following order): None
+2024-02-26 17:29:13.6406 Execution plan of resource filters (in the following order): None
+2024-02-26 17:29:13.6406 Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000), CommonService.Filters.TokenToUserIdActionFilter
+2024-02-26 17:29:13.6406 Execution plan of exception filters (in the following order): None
+2024-02-26 17:29:13.6406 Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-02-26 17:29:13.6406 Executing controller factory for controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi)
+2024-02-26 17:29:13.6431 Executed controller factory for controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi)
+2024-02-26 17:29:13.6431 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:29:13.6431 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:29:13.6431 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:29:13.6431 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:29:13.6431 Action Filter: Before executing OnActionExecutionAsync on filter CommonService.Filters.TokenToUserIdActionFilter.
+2024-02-26 17:29:13.6431 Executing action method UserInteraction_WebApi.Controllers.CommonNotificationController.GetAll (UserInteraction_WebApi) - Validation state: Valid
+2024-02-26 17:29:13.7851 Entity Framework Core 7.0.0 initialized 'UserInteractionDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0' with options: None
+2024-02-26 17:29:14.0655 Compiling query expression: 
+'DbSet<CommonNotification>()
+    .Select(x => new GetCommonNotificationDto{ 
+        Id = x.Id, 
+        SenderId = x.SenderId, 
+        ReceiverId = x.ReceiverId, 
+        TypeInt = x.TypeInt, 
+        Message = x.Message, 
+        Title = x.Title, 
+        SenderType = x.SenderType, 
+        Audience = x.Audience, 
+        IsRead = x.IsRead, 
+        CreatedDate = x.CreatedDate 
+    }
+    )'
+2024-02-26 17:29:15.0265 Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<GetCommonNotificationDto>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            Id -> 0
+            SenderId -> 1
+            ReceiverId -> 2
+            TypeInt -> 3
+            Message -> 4
+            Title -> 5
+            SenderType -> 6
+            Audience -> 7
+            IsRead -> 8
+            CreatedDate -> 9
+        SELECT c.Id, c.SenderId, c.ReceiverId, c.TypeInt, c.Message, c.Title, c.SenderType, c.Audience, c.IsRead, c.CreatedDate
+        FROM CommonNotifications AS c), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, GetCommonNotificationDto>, 
+    UserInteraction_Infrastructure.Data.UserInteractionDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-02-26 17:29:15.2185 Creating DbCommand for 'ExecuteReader'.
+2024-02-26 17:29:15.2185 Creating DbConnection.
+2024-02-26 17:29:15.2185 Created DbConnection. (0ms).
+2024-02-26 17:29:15.2185 Created DbCommand for 'ExecuteReader' (0ms).
+2024-02-26 17:29:15.2185 Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-02-26 17:29:15.2185 Opening connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:29:15.2209 Opened connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:29:15.2209 Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[SenderId], [c].[ReceiverId], [c].[TypeInt], [c].[Message], [c].[Title], [c].[SenderType], [c].[Audience], [c].[IsRead], [c].[CreatedDate]
+FROM [CommonNotifications] AS [c]
+2024-02-26 17:29:15.3102 Executed DbCommand (54ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[SenderId], [c].[ReceiverId], [c].[TypeInt], [c].[Message], [c].[Title], [c].[SenderType], [c].[Audience], [c].[IsRead], [c].[CreatedDate]
+FROM [CommonNotifications] AS [c]
+2024-02-26 17:29:15.4595 Closing data reader to 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:29:15.4595 A data reader for 'UserInteraction2' on server 'LHR-TCH-UKHAN' is being disposed after spending 149ms reading results.
+2024-02-26 17:29:15.4595 Closing connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:29:15.4595 Closed connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN' (0ms).
+2024-02-26 17:29:15.4595 Executed action method UserInteraction_WebApi.Controllers.CommonNotificationController.GetAll (UserInteraction_WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1816.8925ms.
+2024-02-26 17:29:15.4595 Action Filter: After executing OnActionExecutionAsync on filter CommonService.Filters.TokenToUserIdActionFilter.
+2024-02-26 17:29:15.4595 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:29:15.4595 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:29:15.4595 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:29:15.4595 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:29:15.4595 Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:29:15.4595 Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:29:15.4595 Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 17:29:15.4595 List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-02-26 17:29:15.4595 No information found on request to perform content negotiation.
+2024-02-26 17:29:15.4595 Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-26 17:29:15.4595 Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-26 17:29:15.4595 Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-26 17:29:15.4595 Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[UserInteraction_Application.Dtos.CommonNotification.GetCommonNotificationDto, UserInteraction_Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-26 17:29:15.6007 After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 17:29:15.6007 Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:29:15.6007 Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:29:15.6007 Executed action UserInteraction_WebApi.Controllers.CommonNotificationController.GetAll (UserInteraction_WebApi) in 1960.2487ms
+2024-02-26 17:29:15.6007 Executed endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.GetAll (UserInteraction_WebApi)'
+2024-02-26 17:29:15.6007 Connection id "0HN1MOO3P7UHA" completed keep alive response.
+2024-02-26 17:29:15.6007 'UserInteractionDbContext' disposed.
+2024-02-26 17:29:15.6007 Disposing connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:29:15.6007 Disposed connection to database '' on server '' (0ms).
+2024-02-26 17:29:15.6007 Request finished HTTP/1.1 GET http://localhost:5107/api/CommonNotification/GetAll - - - 200 - application/json;+charset=utf-8 2013.3780ms
+2024-02-26 17:29:15.7608 Connection id "0HN1MOO3P7UHA" received FIN.
+2024-02-26 17:29:15.7608 Connection id "0HN1MOO3P7UHA" disconnecting.
+2024-02-26 17:29:15.7608 Connection id "0HN1MOO3P7UHA" stopped.
+2024-02-26 17:29:15.8336 Connection id "0HN1MOO3P7UHA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-26 17:29:35.6595 Connection id "0HN1MOO3P7UHB" accepted.
+2024-02-26 17:29:35.6595 Connection id "0HN1MOO3P7UHB" started.
+2024-02-26 17:29:35.6595 Request starting HTTP/1.1 GET http://localhost:5107/api/CommonNotification/GetById?Id=3 - -
+2024-02-26 17:29:35.6595 All hosts are allowed.
+2024-02-26 17:29:35.6595 1 candidate(s) found for the request path '/api/CommonNotification/GetById'
+2024-02-26 17:29:35.6595 Endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.GetById (UserInteraction_WebApi)' with route pattern 'api/CommonNotification/GetById' is valid for the request path '/api/CommonNotification/GetById'
+2024-02-26 17:29:35.6595 Request matched endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.GetById (UserInteraction_WebApi)'
+2024-02-26 17:29:35.6595 Static files was skipped as the request already matched an endpoint.
+2024-02-26 17:29:35.6595 Successfully validated the token.
+2024-02-26 17:29:35.6595 AuthenticationScheme: Bearer was successfully authenticated.
+2024-02-26 17:29:35.6595 AuthenticationScheme: Bearer was successfully authenticated.
+2024-02-26 17:29:35.6595 Authorization was successful.
+2024-02-26 17:29:35.6595 Executing endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.GetById (UserInteraction_WebApi)'
+2024-02-26 17:29:35.7058 Route matched with {action = "GetById", controller = "CommonNotification"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int64) on controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi).
+2024-02-26 17:29:35.7058 Execution plan of authorization filters (in the following order): None
+2024-02-26 17:29:35.7058 Execution plan of resource filters (in the following order): None
+2024-02-26 17:29:35.7058 Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000), CommonService.Filters.TokenToUserIdActionFilter
+2024-02-26 17:29:35.7058 Execution plan of exception filters (in the following order): None
+2024-02-26 17:29:35.7058 Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-02-26 17:29:35.7058 Executing controller factory for controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi)
+2024-02-26 17:29:35.7058 Executed controller factory for controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi)
+2024-02-26 17:29:35.7229 Attempting to bind parameter 'Id' of type 'System.Int64' ...
+2024-02-26 17:29:35.7229 Attempting to bind parameter 'Id' of type 'System.Int64' using the name 'Id' in request data ...
+2024-02-26 17:29:35.7375 Done attempting to bind parameter 'Id' of type 'System.Int64'.
+2024-02-26 17:29:35.7375 Done attempting to bind parameter 'Id' of type 'System.Int64'.
+2024-02-26 17:29:35.7375 Attempting to validate the bound parameter 'Id' of type 'System.Int64' ...
+2024-02-26 17:29:35.7375 Done attempting to validate the bound parameter 'Id' of type 'System.Int64'.
+2024-02-26 17:29:35.7375 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:29:35.7375 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:29:35.7375 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:29:35.7375 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:29:35.7375 Action Filter: Before executing OnActionExecutionAsync on filter CommonService.Filters.TokenToUserIdActionFilter.
+2024-02-26 17:29:35.7375 Executing action method UserInteraction_WebApi.Controllers.CommonNotificationController.GetById (UserInteraction_WebApi) - Validation state: Valid
+2024-02-26 17:29:35.7375 Executing action method UserInteraction_WebApi.Controllers.CommonNotificationController.GetById (UserInteraction_WebApi) with arguments (3)
+2024-02-26 17:29:35.7635 Entity Framework Core 7.0.0 initialized 'UserInteractionDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0' with options: None
+2024-02-26 17:29:35.7855 Compiling query expression: 
+'DbSet<CommonNotification>()
+    .FirstOrDefault(x => x.Id == __Id_0)'
+2024-02-26 17:29:36.0576 Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<CommonNotification>(
+    asyncEnumerable: new SingleQueryingEnumerable<CommonNotification>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: CommonNotification.Id (long) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: CommonNotification.Audience (int) Required, 1], [Property: CommonNotification.CreatedBy (long) Required, 2], [Property: CommonNotification.CreatedDate (DateTime) Required, 3], [Property: CommonNotification.IsActive (bool) Required, 4], [Property: CommonNotification.IsDeleted (bool) Required, 5], [Property: CommonNotification.IsRead (bool) Required, 6], [Property: CommonNotification.Message (string), 7], [Property: CommonNotification.ReceiverId (long?), 8], [Property: CommonNotification.SenderId (long) Required, 9], [Property: CommonNotification.SenderType (int) Required, 10], [Property: CommonNotification.Title (string) MaxLength(255), 11], [Property: CommonNotification.TypeInt (int) Required, 12], [Property: CommonNotification.UpdatedBy (long?), 13], [Property: CommonNotification.UpdatedDate (DateTime?), 14] }
+            SELECT TOP(1) c.Id, c.Audience, c.CreatedBy, c.CreatedDate, c.IsActive, c.IsDeleted, c.IsRead, c.Message, c.ReceiverId, c.SenderId, c.SenderType, c.Title, c.TypeInt, c.UpdatedBy, c.UpdatedDate
+            FROM CommonNotifications AS c
+            WHERE c.Id == @__Id_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CommonNotification>, 
+        UserInteraction_Infrastructure.Data.UserInteractionDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2024-02-26 17:29:36.1169 Creating DbCommand for 'ExecuteReader'.
+2024-02-26 17:29:36.1169 Creating DbConnection.
+2024-02-26 17:29:36.1169 Created DbConnection. (0ms).
+2024-02-26 17:29:36.1169 Created DbCommand for 'ExecuteReader' (0ms).
+2024-02-26 17:29:36.1169 Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-02-26 17:29:36.1169 Opening connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:29:36.1169 Opened connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:29:36.1169 Executing DbCommand [Parameters=[@__Id_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Audience], [c].[CreatedBy], [c].[CreatedDate], [c].[IsActive], [c].[IsDeleted], [c].[IsRead], [c].[Message], [c].[ReceiverId], [c].[SenderId], [c].[SenderType], [c].[Title], [c].[TypeInt], [c].[UpdatedBy], [c].[UpdatedDate]
+FROM [CommonNotifications] AS [c]
+WHERE [c].[Id] = @__Id_0
+2024-02-26 17:29:36.1902 Executed DbCommand (33ms) [Parameters=[@__Id_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Audience], [c].[CreatedBy], [c].[CreatedDate], [c].[IsActive], [c].[IsDeleted], [c].[IsRead], [c].[Message], [c].[ReceiverId], [c].[SenderId], [c].[SenderType], [c].[Title], [c].[TypeInt], [c].[UpdatedBy], [c].[UpdatedDate]
+FROM [CommonNotifications] AS [c]
+WHERE [c].[Id] = @__Id_0
+2024-02-26 17:29:36.2086 Closing data reader to 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:29:36.2086 A data reader for 'UserInteraction2' on server 'LHR-TCH-UKHAN' is being disposed after spending 17ms reading results.
+2024-02-26 17:29:36.2086 Closing connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:29:36.2086 Closed connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN' (0ms).
+2024-02-26 17:29:36.2234 Executed action method UserInteraction_WebApi.Controllers.CommonNotificationController.GetById (UserInteraction_WebApi), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 483.7558ms.
+2024-02-26 17:29:36.2234 Action Filter: After executing OnActionExecutionAsync on filter CommonService.Filters.TokenToUserIdActionFilter.
+2024-02-26 17:29:36.2234 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:29:36.2234 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:29:36.2234 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:29:36.2234 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:29:36.2354 Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:29:36.2354 Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:29:36.2354 Before executing action result Microsoft.AspNetCore.Mvc.NotFoundObjectResult.
+2024-02-26 17:29:36.2354 List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-02-26 17:29:36.2354 No information found on request to perform content negotiation.
+2024-02-26 17:29:36.2354 Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-26 17:29:36.2354 Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-26 17:29:36.2354 Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-26 17:29:36.2354 Executing NotFoundObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-26 17:29:36.2354 After executing action result Microsoft.AspNetCore.Mvc.NotFoundObjectResult.
+2024-02-26 17:29:36.2354 Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:29:36.2354 Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:29:36.2354 Executed action UserInteraction_WebApi.Controllers.CommonNotificationController.GetById (UserInteraction_WebApi) in 531.4015ms
+2024-02-26 17:29:36.2354 Executed endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.GetById (UserInteraction_WebApi)'
+2024-02-26 17:29:36.2354 Connection id "0HN1MOO3P7UHB" completed keep alive response.
+2024-02-26 17:29:36.2354 'UserInteractionDbContext' disposed.
+2024-02-26 17:29:36.2354 Disposing connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:29:36.2354 Disposed connection to database '' on server '' (0ms).
+2024-02-26 17:29:36.2354 Request finished HTTP/1.1 GET http://localhost:5107/api/CommonNotification/GetById?Id=3 - - - 404 - application/json;+charset=utf-8 574.8052ms
+2024-02-26 17:29:42.7076 Request starting HTTP/1.1 GET http://localhost:5107/api/CommonNotification/GetById?Id=1 - -
+2024-02-26 17:29:42.7076 All hosts are allowed.
+2024-02-26 17:29:42.7076 1 candidate(s) found for the request path '/api/CommonNotification/GetById'
+2024-02-26 17:29:42.7076 Endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.GetById (UserInteraction_WebApi)' with route pattern 'api/CommonNotification/GetById' is valid for the request path '/api/CommonNotification/GetById'
+2024-02-26 17:29:42.7076 Request matched endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.GetById (UserInteraction_WebApi)'
+2024-02-26 17:29:42.7076 Static files was skipped as the request already matched an endpoint.
+2024-02-26 17:29:42.7076 Successfully validated the token.
+2024-02-26 17:29:42.7076 AuthenticationScheme: Bearer was successfully authenticated.
+2024-02-26 17:29:42.7076 AuthenticationScheme: Bearer was successfully authenticated.
+2024-02-26 17:29:42.7076 Authorization was successful.
+2024-02-26 17:29:42.7076 Executing endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.GetById (UserInteraction_WebApi)'
+2024-02-26 17:29:42.7076 Route matched with {action = "GetById", controller = "CommonNotification"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int64) on controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi).
+2024-02-26 17:29:42.7076 Execution plan of authorization filters (in the following order): None
+2024-02-26 17:29:42.7076 Execution plan of resource filters (in the following order): None
+2024-02-26 17:29:42.7076 Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000), CommonService.Filters.TokenToUserIdActionFilter
+2024-02-26 17:29:42.7076 Execution plan of exception filters (in the following order): None
+2024-02-26 17:29:42.7076 Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-02-26 17:29:42.7076 Executing controller factory for controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi)
+2024-02-26 17:29:42.7076 Executed controller factory for controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi)
+2024-02-26 17:29:42.7076 Attempting to bind parameter 'Id' of type 'System.Int64' ...
+2024-02-26 17:29:42.7076 Attempting to bind parameter 'Id' of type 'System.Int64' using the name 'Id' in request data ...
+2024-02-26 17:29:42.7076 Done attempting to bind parameter 'Id' of type 'System.Int64'.
+2024-02-26 17:29:42.7076 Done attempting to bind parameter 'Id' of type 'System.Int64'.
+2024-02-26 17:29:42.7076 Attempting to validate the bound parameter 'Id' of type 'System.Int64' ...
+2024-02-26 17:29:42.7076 Done attempting to validate the bound parameter 'Id' of type 'System.Int64'.
+2024-02-26 17:29:42.7076 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:29:42.7076 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:29:42.7076 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:29:42.7076 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:29:42.7076 Action Filter: Before executing OnActionExecutionAsync on filter CommonService.Filters.TokenToUserIdActionFilter.
+2024-02-26 17:29:42.7076 Executing action method UserInteraction_WebApi.Controllers.CommonNotificationController.GetById (UserInteraction_WebApi) - Validation state: Valid
+2024-02-26 17:29:42.7076 Executing action method UserInteraction_WebApi.Controllers.CommonNotificationController.GetById (UserInteraction_WebApi) with arguments (1)
+2024-02-26 17:29:42.7253 Entity Framework Core 7.0.0 initialized 'UserInteractionDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0' with options: None
+2024-02-26 17:29:42.7387 Creating DbCommand for 'ExecuteReader'.
+2024-02-26 17:29:42.7387 Creating DbConnection.
+2024-02-26 17:29:42.7387 Created DbConnection. (0ms).
+2024-02-26 17:29:42.7387 Created DbCommand for 'ExecuteReader' (1ms).
+2024-02-26 17:29:42.7387 Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-02-26 17:29:42.7387 Opening connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:29:42.7387 Opened connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:29:42.7387 Executing DbCommand [Parameters=[@__Id_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Audience], [c].[CreatedBy], [c].[CreatedDate], [c].[IsActive], [c].[IsDeleted], [c].[IsRead], [c].[Message], [c].[ReceiverId], [c].[SenderId], [c].[SenderType], [c].[Title], [c].[TypeInt], [c].[UpdatedBy], [c].[UpdatedDate]
+FROM [CommonNotifications] AS [c]
+WHERE [c].[Id] = @__Id_0
+2024-02-26 17:29:42.8534 Executed DbCommand (30ms) [Parameters=[@__Id_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Audience], [c].[CreatedBy], [c].[CreatedDate], [c].[IsActive], [c].[IsDeleted], [c].[IsRead], [c].[Message], [c].[ReceiverId], [c].[SenderId], [c].[SenderType], [c].[Title], [c].[TypeInt], [c].[UpdatedBy], [c].[UpdatedDate]
+FROM [CommonNotifications] AS [c]
+WHERE [c].[Id] = @__Id_0
+2024-02-26 17:29:42.9147 Context 'UserInteractionDbContext' started tracking 'CommonNotification' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 17:29:42.9147 Closing data reader to 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:29:42.9147 A data reader for 'UserInteraction2' on server 'LHR-TCH-UKHAN' is being disposed after spending 51ms reading results.
+2024-02-26 17:29:42.9147 Closing connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:29:42.9147 Closed connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN' (0ms).
+2024-02-26 17:29:42.9324 Executed action method UserInteraction_WebApi.Controllers.CommonNotificationController.GetById (UserInteraction_WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 212.8942ms.
+2024-02-26 17:29:42.9324 Action Filter: After executing OnActionExecutionAsync on filter CommonService.Filters.TokenToUserIdActionFilter.
+2024-02-26 17:29:42.9324 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:29:42.9324 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:29:42.9324 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:29:42.9324 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:29:42.9324 Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:29:42.9324 Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:29:42.9324 Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 17:29:42.9324 List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-02-26 17:29:42.9324 No information found on request to perform content negotiation.
+2024-02-26 17:29:42.9324 Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-26 17:29:42.9324 Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-26 17:29:42.9324 Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-26 17:29:42.9324 Executing OkObjectResult, writing value of type 'UserInteraction_Application.Dtos.CommonNotification.GetCommonNotificationDto'.
+2024-02-26 17:29:42.9324 After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 17:29:42.9324 Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:29:42.9324 Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:29:42.9324 Executed action UserInteraction_WebApi.Controllers.CommonNotificationController.GetById (UserInteraction_WebApi) in 219.264ms
+2024-02-26 17:29:42.9324 Executed endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.GetById (UserInteraction_WebApi)'
+2024-02-26 17:29:42.9324 Connection id "0HN1MOO3P7UHB" completed keep alive response.
+2024-02-26 17:29:42.9324 'UserInteractionDbContext' disposed.
+2024-02-26 17:29:42.9324 Disposing connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:29:42.9324 Disposed connection to database '' on server '' (0ms).
+2024-02-26 17:29:42.9324 Request finished HTTP/1.1 GET http://localhost:5107/api/CommonNotification/GetById?Id=1 - - - 200 - application/json;+charset=utf-8 229.4670ms
+2024-02-26 17:29:45.7925 Connection id "0HN1MOO3P7UHB" received FIN.
+2024-02-26 17:29:45.7925 Connection id "0HN1MOO3P7UHB" disconnecting.
+2024-02-26 17:29:45.7925 Connection id "0HN1MOO3P7UHB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-26 17:29:45.8068 Connection id "0HN1MOO3P7UHB" stopped.
+2024-02-26 17:32:08.4210 Connection id "0HN1MOO3P7UHC" accepted.
+2024-02-26 17:32:08.4276 Connection id "0HN1MOO3P7UHC" started.
+2024-02-26 17:32:08.4276 Request starting HTTP/1.1 POST http://localhost:5107/api/CommonNotification/Update application/json 146
+2024-02-26 17:32:08.4276 All hosts are allowed.
+2024-02-26 17:32:08.4276 1 candidate(s) found for the request path '/api/CommonNotification/Update'
+2024-02-26 17:32:08.4276 Endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.Update (UserInteraction_WebApi)' with route pattern 'api/CommonNotification/Update' is valid for the request path '/api/CommonNotification/Update'
+2024-02-26 17:32:08.4276 Request matched endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.Update (UserInteraction_WebApi)'
+2024-02-26 17:32:08.4276 Static files was skipped as the request already matched an endpoint.
+2024-02-26 17:32:08.4276 The request has an origin header: 'http://localhost:5107'.
+2024-02-26 17:32:08.4276 CORS policy execution failed.
+2024-02-26 17:32:08.4276 Request origin http://localhost:5107 does not have permission to access the resource.
+2024-02-26 17:32:08.4276 Successfully validated the token.
+2024-02-26 17:32:08.4276 AuthenticationScheme: Bearer was successfully authenticated.
+2024-02-26 17:32:08.4276 AuthenticationScheme: Bearer was successfully authenticated.
+2024-02-26 17:32:08.4276 Authorization was successful.
+2024-02-26 17:32:08.4869 Executing endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.Update (UserInteraction_WebApi)'
+2024-02-26 17:32:08.5118 Route matched with {action = "Update", controller = "CommonNotification"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int64, UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto) on controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi).
+2024-02-26 17:32:08.5118 Execution plan of authorization filters (in the following order): None
+2024-02-26 17:32:08.5118 Execution plan of resource filters (in the following order): None
+2024-02-26 17:32:08.5118 Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000), CommonService.Filters.TokenToUserIdActionFilter
+2024-02-26 17:32:08.5118 Execution plan of exception filters (in the following order): None
+2024-02-26 17:32:08.5118 Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-02-26 17:32:08.5118 Executing controller factory for controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi)
+2024-02-26 17:32:08.5118 Executed controller factory for controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi)
+2024-02-26 17:32:08.5118 Attempting to bind parameter 'Id' of type 'System.Int64' ...
+2024-02-26 17:32:08.5118 Attempting to bind parameter 'Id' of type 'System.Int64' using the name '' in request data ...
+2024-02-26 17:32:08.5118 Could not find a value in the request with name '' for binding parameter 'Id' of type 'System.Int64'.
+2024-02-26 17:32:08.5118 Done attempting to bind parameter 'Id' of type 'System.Int64'.
+2024-02-26 17:32:08.5118 Done attempting to bind parameter 'Id' of type 'System.Int64'.
+2024-02-26 17:32:08.5118 Attempting to validate the bound parameter 'Id' of type 'System.Int64' ...
+2024-02-26 17:32:08.5118 Done attempting to validate the bound parameter 'Id' of type 'System.Int64'.
+2024-02-26 17:32:08.5118 Attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto' ...
+2024-02-26 17:32:08.5118 Attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto' using the name '' in request data ...
+2024-02-26 17:32:08.5171 Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-02-26 17:32:08.5171 Connection id "0HN1MOO3P7UHC", Request id "0HN1MOO3P7UHC:00000001": started reading request body.
+2024-02-26 17:32:08.5171 Connection id "0HN1MOO3P7UHC", Request id "0HN1MOO3P7UHC:00000001": done reading request body.
+2024-02-26 17:32:08.5171 JSON input formatter succeeded, deserializing to type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto'
+2024-02-26 17:32:08.5171 Done attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto'.
+2024-02-26 17:32:08.5171 Done attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto'.
+2024-02-26 17:32:08.5171 Attempting to validate the bound parameter 'model' of type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto' ...
+2024-02-26 17:32:08.5171 Done attempting to validate the bound parameter 'model' of type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto'.
+2024-02-26 17:32:08.5171 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:32:08.5171 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:32:08.5171 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:32:08.5171 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:32:08.5171 Action Filter: Before executing OnActionExecutionAsync on filter CommonService.Filters.TokenToUserIdActionFilter.
+2024-02-26 17:32:08.5171 Executing action method UserInteraction_WebApi.Controllers.CommonNotificationController.Update (UserInteraction_WebApi) - Validation state: Valid
+2024-02-26 17:32:08.5171 Executing action method UserInteraction_WebApi.Controllers.CommonNotificationController.Update (UserInteraction_WebApi) with arguments (0, UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto)
+2024-02-26 17:32:08.5513 Entity Framework Core 7.0.0 initialized 'UserInteractionDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0' with options: None
+2024-02-26 17:32:08.5513 Creating DbCommand for 'ExecuteReader'.
+2024-02-26 17:32:08.5513 Creating DbConnection.
+2024-02-26 17:32:08.5513 Created DbConnection. (0ms).
+2024-02-26 17:32:08.5513 Created DbCommand for 'ExecuteReader' (0ms).
+2024-02-26 17:32:08.5513 Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-02-26 17:32:08.5513 Opening connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:32:08.5513 Opened connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:32:08.5513 Executing DbCommand [Parameters=[@__Id_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Audience], [c].[CreatedBy], [c].[CreatedDate], [c].[IsActive], [c].[IsDeleted], [c].[IsRead], [c].[Message], [c].[ReceiverId], [c].[SenderId], [c].[SenderType], [c].[Title], [c].[TypeInt], [c].[UpdatedBy], [c].[UpdatedDate]
+FROM [CommonNotifications] AS [c]
+WHERE [c].[Id] = @__Id_0
+2024-02-26 17:32:08.6103 Executed DbCommand (17ms) [Parameters=[@__Id_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Audience], [c].[CreatedBy], [c].[CreatedDate], [c].[IsActive], [c].[IsDeleted], [c].[IsRead], [c].[Message], [c].[ReceiverId], [c].[SenderId], [c].[SenderType], [c].[Title], [c].[TypeInt], [c].[UpdatedBy], [c].[UpdatedDate]
+FROM [CommonNotifications] AS [c]
+WHERE [c].[Id] = @__Id_0
+2024-02-26 17:32:08.6110 Closing data reader to 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:32:08.6110 A data reader for 'UserInteraction2' on server 'LHR-TCH-UKHAN' is being disposed after spending 0ms reading results.
+2024-02-26 17:32:08.6110 Closing connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:32:08.6110 Closed connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN' (0ms).
+2024-02-26 17:32:08.6110 Executed action method UserInteraction_WebApi.Controllers.CommonNotificationController.Update (UserInteraction_WebApi), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 92.3078ms.
+2024-02-26 17:32:08.6110 Action Filter: After executing OnActionExecutionAsync on filter CommonService.Filters.TokenToUserIdActionFilter.
+2024-02-26 17:32:08.6110 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:32:08.6110 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:32:08.6110 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:32:08.6110 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:32:08.6110 Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:32:08.6110 Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:32:08.6110 Before executing action result Microsoft.AspNetCore.Mvc.NotFoundObjectResult.
+2024-02-26 17:32:08.6110 List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-02-26 17:32:08.6110 No information found on request to perform content negotiation.
+2024-02-26 17:32:08.6110 Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-26 17:32:08.6110 Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-26 17:32:08.6110 Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-26 17:32:08.6110 Executing NotFoundObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-26 17:32:08.6110 After executing action result Microsoft.AspNetCore.Mvc.NotFoundObjectResult.
+2024-02-26 17:32:08.6110 Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:32:08.6110 Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:32:08.6110 Executed action UserInteraction_WebApi.Controllers.CommonNotificationController.Update (UserInteraction_WebApi) in 106.3232ms
+2024-02-26 17:32:08.6110 Executed endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.Update (UserInteraction_WebApi)'
+2024-02-26 17:32:08.6268 Connection id "0HN1MOO3P7UHC" completed keep alive response.
+2024-02-26 17:32:08.6268 'UserInteractionDbContext' disposed.
+2024-02-26 17:32:08.6268 Disposing connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:32:08.6268 Disposed connection to database '' on server '' (0ms).
+2024-02-26 17:32:08.6268 Request finished HTTP/1.1 POST http://localhost:5107/api/CommonNotification/Update application/json 146 - 404 - application/json;+charset=utf-8 200.4350ms
+2024-02-26 17:32:16.0217 Connection id "0HN1MOO3P7UHC" received FIN.
+2024-02-26 17:32:16.0217 Connection id "0HN1MOO3P7UHC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-26 17:32:16.0217 Connection id "0HN1MOO3P7UHC" disconnecting.
+2024-02-26 17:32:16.0217 Connection id "0HN1MOO3P7UHC" stopped.
+2024-02-26 17:32:23.4903 Connection id "0HN1MOO3P7UHD" accepted.
+2024-02-26 17:32:23.4903 Connection id "0HN1MOO3P7UHD" started.
+2024-02-26 17:32:23.4903 Request starting HTTP/1.1 POST http://localhost:5107/api/CommonNotification/Update?Id=1 application/json 146
+2024-02-26 17:32:23.4903 All hosts are allowed.
+2024-02-26 17:32:23.4903 1 candidate(s) found for the request path '/api/CommonNotification/Update'
+2024-02-26 17:32:23.4903 Endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.Update (UserInteraction_WebApi)' with route pattern 'api/CommonNotification/Update' is valid for the request path '/api/CommonNotification/Update'
+2024-02-26 17:32:23.4903 Request matched endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.Update (UserInteraction_WebApi)'
+2024-02-26 17:32:23.4903 Static files was skipped as the request already matched an endpoint.
+2024-02-26 17:32:23.4903 The request has an origin header: 'http://localhost:5107'.
+2024-02-26 17:32:23.4903 CORS policy execution failed.
+2024-02-26 17:32:23.4903 Request origin http://localhost:5107 does not have permission to access the resource.
+2024-02-26 17:32:23.4903 Successfully validated the token.
+2024-02-26 17:32:23.4903 AuthenticationScheme: Bearer was successfully authenticated.
+2024-02-26 17:32:23.4903 AuthenticationScheme: Bearer was successfully authenticated.
+2024-02-26 17:32:23.4903 Authorization was successful.
+2024-02-26 17:32:23.5035 Executing endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.Update (UserInteraction_WebApi)'
+2024-02-26 17:32:23.5035 Route matched with {action = "Update", controller = "CommonNotification"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int64, UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto) on controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi).
+2024-02-26 17:32:23.5035 Execution plan of authorization filters (in the following order): None
+2024-02-26 17:32:23.5035 Execution plan of resource filters (in the following order): None
+2024-02-26 17:32:23.5035 Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000), CommonService.Filters.TokenToUserIdActionFilter
+2024-02-26 17:32:23.5035 Execution plan of exception filters (in the following order): None
+2024-02-26 17:32:23.5035 Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-02-26 17:32:23.5035 Executing controller factory for controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi)
+2024-02-26 17:32:23.5035 Executed controller factory for controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi)
+2024-02-26 17:32:23.5035 Attempting to bind parameter 'Id' of type 'System.Int64' ...
+2024-02-26 17:32:23.5035 Attempting to bind parameter 'Id' of type 'System.Int64' using the name 'Id' in request data ...
+2024-02-26 17:32:23.5035 Done attempting to bind parameter 'Id' of type 'System.Int64'.
+2024-02-26 17:32:23.5035 Done attempting to bind parameter 'Id' of type 'System.Int64'.
+2024-02-26 17:32:23.5035 Attempting to validate the bound parameter 'Id' of type 'System.Int64' ...
+2024-02-26 17:32:23.5035 Done attempting to validate the bound parameter 'Id' of type 'System.Int64'.
+2024-02-26 17:32:23.5035 Attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto' ...
+2024-02-26 17:32:23.5035 Attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto' using the name '' in request data ...
+2024-02-26 17:32:23.5035 Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-02-26 17:32:23.5035 Connection id "0HN1MOO3P7UHD", Request id "0HN1MOO3P7UHD:00000001": started reading request body.
+2024-02-26 17:32:23.5035 Connection id "0HN1MOO3P7UHD", Request id "0HN1MOO3P7UHD:00000001": done reading request body.
+2024-02-26 17:32:23.5035 JSON input formatter succeeded, deserializing to type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto'
+2024-02-26 17:32:23.5035 Done attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto'.
+2024-02-26 17:32:23.5035 Done attempting to bind parameter 'model' of type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto'.
+2024-02-26 17:32:23.5035 Attempting to validate the bound parameter 'model' of type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto' ...
+2024-02-26 17:32:23.5035 Done attempting to validate the bound parameter 'model' of type 'UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto'.
+2024-02-26 17:32:23.5035 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:32:23.5035 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:32:23.5035 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:32:23.5035 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:32:23.5035 Action Filter: Before executing OnActionExecutionAsync on filter CommonService.Filters.TokenToUserIdActionFilter.
+2024-02-26 17:32:23.5035 Executing action method UserInteraction_WebApi.Controllers.CommonNotificationController.Update (UserInteraction_WebApi) - Validation state: Valid
+2024-02-26 17:32:23.5035 Executing action method UserInteraction_WebApi.Controllers.CommonNotificationController.Update (UserInteraction_WebApi) with arguments (1, UserInteraction_Application.Dtos.CommonNotification.AddCommonNotificationDto)
+2024-02-26 17:32:23.5035 Entity Framework Core 7.0.0 initialized 'UserInteractionDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0' with options: None
+2024-02-26 17:32:23.5035 Creating DbCommand for 'ExecuteReader'.
+2024-02-26 17:32:23.5035 Creating DbConnection.
+2024-02-26 17:32:23.5035 Created DbConnection. (0ms).
+2024-02-26 17:32:23.5035 Created DbCommand for 'ExecuteReader' (0ms).
+2024-02-26 17:32:23.5035 Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-02-26 17:32:23.5035 Opening connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:32:23.5035 Opened connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:32:23.5035 Executing DbCommand [Parameters=[@__Id_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Audience], [c].[CreatedBy], [c].[CreatedDate], [c].[IsActive], [c].[IsDeleted], [c].[IsRead], [c].[Message], [c].[ReceiverId], [c].[SenderId], [c].[SenderType], [c].[Title], [c].[TypeInt], [c].[UpdatedBy], [c].[UpdatedDate]
+FROM [CommonNotifications] AS [c]
+WHERE [c].[Id] = @__Id_0
+2024-02-26 17:32:23.6518 Executed DbCommand (101ms) [Parameters=[@__Id_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Audience], [c].[CreatedBy], [c].[CreatedDate], [c].[IsActive], [c].[IsDeleted], [c].[IsRead], [c].[Message], [c].[ReceiverId], [c].[SenderId], [c].[SenderType], [c].[Title], [c].[TypeInt], [c].[UpdatedBy], [c].[UpdatedDate]
+FROM [CommonNotifications] AS [c]
+WHERE [c].[Id] = @__Id_0
+2024-02-26 17:32:23.6606 Context 'UserInteractionDbContext' started tracking 'CommonNotification' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 17:32:23.6606 Closing data reader to 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:32:23.6606 A data reader for 'UserInteraction2' on server 'LHR-TCH-UKHAN' is being disposed after spending 12ms reading results.
+2024-02-26 17:32:23.6606 Closing connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:32:23.6606 Closed connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN' (0ms).
+2024-02-26 17:32:23.6835 An entity of type 'CommonNotification' tracked by 'UserInteractionDbContext' changed state from 'Unchanged' to 'Modified'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 17:32:23.6835 SaveChanges starting for 'UserInteractionDbContext'.
+2024-02-26 17:32:23.6835 DetectChanges starting for 'UserInteractionDbContext'.
+2024-02-26 17:32:23.6835 DetectChanges completed for 'UserInteractionDbContext'.
+2024-02-26 17:32:23.7488 Opening connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:32:23.7488 Opened connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:32:23.7488 Creating DbCommand for 'ExecuteReader'.
+2024-02-26 17:32:23.7488 Created DbCommand for 'ExecuteReader' (0ms).
+2024-02-26 17:32:23.7522 Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-02-26 17:32:23.7522 Executing DbCommand [Parameters=[@p14='?' (DbType = Int64), @p0='?' (DbType = Int32), @p1='?' (DbType = Int64), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (DbType = Int64), @p8='?' (DbType = Int64), @p9='?' (DbType = Int32), @p10='?' (Size = 255), @p11='?' (DbType = Int32), @p12='?' (DbType = Int64), @p13='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [CommonNotifications] SET [Audience] = @p0, [CreatedBy] = @p1, [CreatedDate] = @p2, [IsActive] = @p3, [IsDeleted] = @p4, [IsRead] = @p5, [Message] = @p6, [ReceiverId] = @p7, [SenderId] = @p8, [SenderType] = @p9, [Title] = @p10, [TypeInt] = @p11, [UpdatedBy] = @p12, [UpdatedDate] = @p13
+OUTPUT 1
+WHERE [Id] = @p14;
+2024-02-26 17:32:23.8683 Executed DbCommand (79ms) [Parameters=[@p14='?' (DbType = Int64), @p0='?' (DbType = Int32), @p1='?' (DbType = Int64), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (Size = 4000), @p7='?' (DbType = Int64), @p8='?' (DbType = Int64), @p9='?' (DbType = Int32), @p10='?' (Size = 255), @p11='?' (DbType = Int32), @p12='?' (DbType = Int64), @p13='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [CommonNotifications] SET [Audience] = @p0, [CreatedBy] = @p1, [CreatedDate] = @p2, [IsActive] = @p3, [IsDeleted] = @p4, [IsRead] = @p5, [Message] = @p6, [ReceiverId] = @p7, [SenderId] = @p8, [SenderType] = @p9, [Title] = @p10, [TypeInt] = @p11, [UpdatedBy] = @p12, [UpdatedDate] = @p13
+OUTPUT 1
+WHERE [Id] = @p14;
+2024-02-26 17:32:23.8764 Closing data reader to 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:32:23.8764 A data reader for 'UserInteraction2' on server 'LHR-TCH-UKHAN' is being disposed after spending 8ms reading results.
+2024-02-26 17:32:23.8764 Closing connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:32:23.8764 Closed connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN' (0ms).
+2024-02-26 17:32:23.8764 An entity of type 'CommonNotification' tracked by 'UserInteractionDbContext' changed state from 'Modified' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 17:32:23.8764 SaveChanges completed for 'UserInteractionDbContext' with 1 entities written to the database.
+2024-02-26 17:32:28.9946 Executed action method UserInteraction_WebApi.Controllers.CommonNotificationController.Update (UserInteraction_WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5486.667ms.
+2024-02-26 17:32:28.9946 Action Filter: After executing OnActionExecutionAsync on filter CommonService.Filters.TokenToUserIdActionFilter.
+2024-02-26 17:32:28.9946 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:32:28.9946 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:32:28.9946 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:32:28.9946 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:32:28.9946 Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:32:28.9946 Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:32:28.9946 Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 17:32:28.9946 List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-02-26 17:32:28.9946 No information found on request to perform content negotiation.
+2024-02-26 17:32:28.9946 Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-26 17:32:28.9946 Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-26 17:32:28.9946 Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-26 17:32:28.9946 Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-26 17:32:28.9946 After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 17:32:28.9946 Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:32:28.9946 Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:32:28.9946 Executed action UserInteraction_WebApi.Controllers.CommonNotificationController.Update (UserInteraction_WebApi) in 5491.7988ms
+2024-02-26 17:32:28.9946 Executed endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.Update (UserInteraction_WebApi)'
+2024-02-26 17:32:28.9946 Connection id "0HN1MOO3P7UHD" completed keep alive response.
+2024-02-26 17:32:28.9946 'UserInteractionDbContext' disposed.
+2024-02-26 17:32:29.0015 Disposing connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:32:29.0015 Disposed connection to database '' on server '' (0ms).
+2024-02-26 17:32:29.0015 Request finished HTTP/1.1 POST http://localhost:5107/api/CommonNotification/Update?Id=1 application/json 146 - 200 - application/json;+charset=utf-8 5509.0715ms
+2024-02-26 17:32:36.0520 Connection id "0HN1MOO3P7UHD" received FIN.
+2024-02-26 17:32:36.0520 Connection id "0HN1MOO3P7UHD" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-26 17:32:36.0520 Connection id "0HN1MOO3P7UHD" disconnecting.
+2024-02-26 17:32:36.0520 Connection id "0HN1MOO3P7UHD" stopped.
+2024-02-26 17:32:37.9186 Connection id "0HN1MOO3P7UHE" accepted.
+2024-02-26 17:32:37.9186 Connection id "0HN1MOO3P7UHE" started.
+2024-02-26 17:32:37.9186 Request starting HTTP/1.1 GET http://localhost:5107/api/CommonNotification/GetAll - -
+2024-02-26 17:32:37.9186 All hosts are allowed.
+2024-02-26 17:32:37.9186 1 candidate(s) found for the request path '/api/CommonNotification/GetAll'
+2024-02-26 17:32:37.9186 Endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.GetAll (UserInteraction_WebApi)' with route pattern 'api/CommonNotification/GetAll' is valid for the request path '/api/CommonNotification/GetAll'
+2024-02-26 17:32:37.9186 Request matched endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.GetAll (UserInteraction_WebApi)'
+2024-02-26 17:32:37.9186 Static files was skipped as the request already matched an endpoint.
+2024-02-26 17:32:37.9186 Successfully validated the token.
+2024-02-26 17:32:37.9186 AuthenticationScheme: Bearer was successfully authenticated.
+2024-02-26 17:32:37.9186 AuthenticationScheme: Bearer was successfully authenticated.
+2024-02-26 17:32:37.9186 Authorization was successful.
+2024-02-26 17:32:37.9299 Executing endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.GetAll (UserInteraction_WebApi)'
+2024-02-26 17:32:37.9299 Route matched with {action = "GetAll", controller = "CommonNotification"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi).
+2024-02-26 17:32:37.9299 Execution plan of authorization filters (in the following order): None
+2024-02-26 17:32:37.9299 Execution plan of resource filters (in the following order): None
+2024-02-26 17:32:37.9299 Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000), CommonService.Filters.TokenToUserIdActionFilter
+2024-02-26 17:32:37.9299 Execution plan of exception filters (in the following order): None
+2024-02-26 17:32:37.9299 Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-02-26 17:32:37.9299 Executing controller factory for controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi)
+2024-02-26 17:32:37.9299 Executed controller factory for controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi)
+2024-02-26 17:32:37.9299 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:32:37.9299 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:32:37.9299 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:32:37.9299 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:32:37.9299 Action Filter: Before executing OnActionExecutionAsync on filter CommonService.Filters.TokenToUserIdActionFilter.
+2024-02-26 17:32:37.9299 Executing action method UserInteraction_WebApi.Controllers.CommonNotificationController.GetAll (UserInteraction_WebApi) - Validation state: Valid
+2024-02-26 17:32:37.9299 Entity Framework Core 7.0.0 initialized 'UserInteractionDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0' with options: None
+2024-02-26 17:32:37.9412 Creating DbCommand for 'ExecuteReader'.
+2024-02-26 17:32:37.9412 Creating DbConnection.
+2024-02-26 17:32:37.9412 Created DbConnection. (0ms).
+2024-02-26 17:32:37.9412 Created DbCommand for 'ExecuteReader' (0ms).
+2024-02-26 17:32:37.9412 Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-02-26 17:32:37.9412 Opening connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:32:37.9412 Opened connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:32:37.9412 Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[SenderId], [c].[ReceiverId], [c].[TypeInt], [c].[Message], [c].[Title], [c].[SenderType], [c].[Audience], [c].[IsRead], [c].[CreatedDate]
+FROM [CommonNotifications] AS [c]
+2024-02-26 17:32:38.0730 Executed DbCommand (79ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[SenderId], [c].[ReceiverId], [c].[TypeInt], [c].[Message], [c].[Title], [c].[SenderType], [c].[Audience], [c].[IsRead], [c].[CreatedDate]
+FROM [CommonNotifications] AS [c]
+2024-02-26 17:32:38.0730 Closing data reader to 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:32:38.0730 A data reader for 'UserInteraction2' on server 'LHR-TCH-UKHAN' is being disposed after spending 0ms reading results.
+2024-02-26 17:32:38.0730 Closing connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:32:38.0730 Closed connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN' (0ms).
+2024-02-26 17:32:38.0730 Executed action method UserInteraction_WebApi.Controllers.CommonNotificationController.GetAll (UserInteraction_WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 142.197ms.
+2024-02-26 17:32:38.0730 Action Filter: After executing OnActionExecutionAsync on filter CommonService.Filters.TokenToUserIdActionFilter.
+2024-02-26 17:32:38.0730 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:32:38.0730 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:32:38.0730 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:32:38.0730 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:32:38.0730 Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:32:38.0730 Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:32:38.0730 Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 17:32:38.0730 List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-02-26 17:32:38.0730 No information found on request to perform content negotiation.
+2024-02-26 17:32:38.0730 Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-26 17:32:38.0730 Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-26 17:32:38.0730 Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-26 17:32:38.0730 Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[UserInteraction_Application.Dtos.CommonNotification.GetCommonNotificationDto, UserInteraction_Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-26 17:32:38.0730 After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 17:32:38.0730 Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:32:38.0730 Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:32:38.0730 Executed action UserInteraction_WebApi.Controllers.CommonNotificationController.GetAll (UserInteraction_WebApi) in 145.1721ms
+2024-02-26 17:32:38.0730 Executed endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.GetAll (UserInteraction_WebApi)'
+2024-02-26 17:32:38.0730 Connection id "0HN1MOO3P7UHE" completed keep alive response.
+2024-02-26 17:32:38.0730 'UserInteractionDbContext' disposed.
+2024-02-26 17:32:38.0730 Disposing connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:32:38.0730 Disposed connection to database '' on server '' (0ms).
+2024-02-26 17:32:38.0730 Request finished HTTP/1.1 GET http://localhost:5107/api/CommonNotification/GetAll - - - 200 - application/json;+charset=utf-8 157.1303ms
+2024-02-26 17:32:46.0493 Connection id "0HN1MOO3P7UHE" received FIN.
+2024-02-26 17:32:46.0493 Connection id "0HN1MOO3P7UHE" disconnecting.
+2024-02-26 17:32:46.0493 Connection id "0HN1MOO3P7UHE" stopped.
+2024-02-26 17:32:46.1827 Connection id "0HN1MOO3P7UHE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-26 17:32:51.8576 Connection id "0HN1MOO3P7UHF" accepted.
+2024-02-26 17:32:51.8576 Connection id "0HN1MOO3P7UHF" started.
+2024-02-26 17:32:51.8576 Request starting HTTP/1.1 GET http://localhost:5107/api/CommonNotification/Delete?Id=3 - -
+2024-02-26 17:32:51.8576 All hosts are allowed.
+2024-02-26 17:32:51.8576 1 candidate(s) found for the request path '/api/CommonNotification/Delete'
+2024-02-26 17:32:51.8576 Endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.Delete (UserInteraction_WebApi)' with route pattern 'api/CommonNotification/Delete' is valid for the request path '/api/CommonNotification/Delete'
+2024-02-26 17:32:51.8576 Request matched endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.Delete (UserInteraction_WebApi)'
+2024-02-26 17:32:51.8607 Static files was skipped as the request already matched an endpoint.
+2024-02-26 17:32:51.8607 Successfully validated the token.
+2024-02-26 17:32:51.8607 AuthenticationScheme: Bearer was successfully authenticated.
+2024-02-26 17:32:51.8607 AuthenticationScheme: Bearer was successfully authenticated.
+2024-02-26 17:32:51.8607 Authorization was successful.
+2024-02-26 17:32:51.8607 Executing endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.Delete (UserInteraction_WebApi)'
+2024-02-26 17:32:51.8871 Route matched with {action = "Delete", controller = "CommonNotification"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int64) on controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi).
+2024-02-26 17:32:51.8871 Execution plan of authorization filters (in the following order): None
+2024-02-26 17:32:51.8871 Execution plan of resource filters (in the following order): None
+2024-02-26 17:32:51.8871 Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000), CommonService.Filters.TokenToUserIdActionFilter
+2024-02-26 17:32:51.8871 Execution plan of exception filters (in the following order): None
+2024-02-26 17:32:51.8871 Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-02-26 17:32:51.8871 Executing controller factory for controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi)
+2024-02-26 17:32:51.8871 Executed controller factory for controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi)
+2024-02-26 17:32:51.8871 Attempting to bind parameter 'Id' of type 'System.Int64' ...
+2024-02-26 17:32:51.8871 Attempting to bind parameter 'Id' of type 'System.Int64' using the name 'Id' in request data ...
+2024-02-26 17:32:51.8871 Done attempting to bind parameter 'Id' of type 'System.Int64'.
+2024-02-26 17:32:51.8871 Done attempting to bind parameter 'Id' of type 'System.Int64'.
+2024-02-26 17:32:51.8871 Attempting to validate the bound parameter 'Id' of type 'System.Int64' ...
+2024-02-26 17:32:51.8871 Done attempting to validate the bound parameter 'Id' of type 'System.Int64'.
+2024-02-26 17:32:51.8871 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:32:51.8871 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:32:51.8871 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:32:51.8871 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:32:51.8871 Action Filter: Before executing OnActionExecutionAsync on filter CommonService.Filters.TokenToUserIdActionFilter.
+2024-02-26 17:32:51.8920 Executing action method UserInteraction_WebApi.Controllers.CommonNotificationController.Delete (UserInteraction_WebApi) - Validation state: Valid
+2024-02-26 17:32:51.8920 Executing action method UserInteraction_WebApi.Controllers.CommonNotificationController.Delete (UserInteraction_WebApi) with arguments (3)
+2024-02-26 17:32:51.9215 Entity Framework Core 7.0.0 initialized 'UserInteractionDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0' with options: None
+2024-02-26 17:32:51.9215 Creating DbCommand for 'ExecuteReader'.
+2024-02-26 17:32:51.9215 Creating DbConnection.
+2024-02-26 17:32:51.9215 Created DbConnection. (0ms).
+2024-02-26 17:32:51.9215 Created DbCommand for 'ExecuteReader' (0ms).
+2024-02-26 17:32:51.9215 Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-02-26 17:32:51.9215 Opening connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:32:51.9240 Opened connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:32:51.9240 Executing DbCommand [Parameters=[@__Id_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Audience], [c].[CreatedBy], [c].[CreatedDate], [c].[IsActive], [c].[IsDeleted], [c].[IsRead], [c].[Message], [c].[ReceiverId], [c].[SenderId], [c].[SenderType], [c].[Title], [c].[TypeInt], [c].[UpdatedBy], [c].[UpdatedDate]
+FROM [CommonNotifications] AS [c]
+WHERE [c].[Id] = @__Id_0
+2024-02-26 17:32:51.9456 Executed DbCommand (8ms) [Parameters=[@__Id_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Audience], [c].[CreatedBy], [c].[CreatedDate], [c].[IsActive], [c].[IsDeleted], [c].[IsRead], [c].[Message], [c].[ReceiverId], [c].[SenderId], [c].[SenderType], [c].[Title], [c].[TypeInt], [c].[UpdatedBy], [c].[UpdatedDate]
+FROM [CommonNotifications] AS [c]
+WHERE [c].[Id] = @__Id_0
+2024-02-26 17:32:51.9456 Closing data reader to 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:32:51.9456 A data reader for 'UserInteraction2' on server 'LHR-TCH-UKHAN' is being disposed after spending 0ms reading results.
+2024-02-26 17:32:51.9456 Closing connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:32:51.9456 Closed connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN' (0ms).
+2024-02-26 17:32:53.9882 Action Filter: After executing OnActionExecutionAsync on filter CommonService.Filters.TokenToUserIdActionFilter.
+2024-02-26 17:32:53.9882 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:32:53.9882 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:32:53.9882 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:32:53.9882 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:32:54.0046 Executed action UserInteraction_WebApi.Controllers.CommonNotificationController.Delete (UserInteraction_WebApi) in 2116.2448ms
+2024-02-26 17:32:54.0046 Executed endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.Delete (UserInteraction_WebApi)'
+2024-02-26 17:32:55.5728 Data Not fount
+2024-02-26 17:32:55.5989 Connection id "0HN1MOO3P7UHF" completed keep alive response.
+2024-02-26 17:32:55.5989 'UserInteractionDbContext' disposed.
+2024-02-26 17:32:55.5989 Disposing connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:32:55.5989 Disposed connection to database '' on server '' (1ms).
+2024-02-26 17:32:55.5989 Request finished HTTP/1.1 GET http://localhost:5107/api/CommonNotification/Delete?Id=3 - - - 404 - application/json 3740.9554ms
+2024-02-26 17:32:56.0830 Connection id "0HN1MOO3P7UHF" received FIN.
+2024-02-26 17:32:56.0830 Connection id "0HN1MOO3P7UHF" disconnecting.
+2024-02-26 17:32:56.0830 Connection id "0HN1MOO3P7UHF" stopped.
+2024-02-26 17:32:56.0830 Connection id "0HN1MOO3P7UHF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-26 17:33:04.7407 Connection id "0HN1MOO3P7UHG" accepted.
+2024-02-26 17:33:04.7407 Connection id "0HN1MOO3P7UHG" started.
+2024-02-26 17:33:04.7407 Request starting HTTP/1.1 GET http://localhost:5107/api/CommonNotification/Delete?Id=1 - -
+2024-02-26 17:33:04.7407 All hosts are allowed.
+2024-02-26 17:33:04.7407 1 candidate(s) found for the request path '/api/CommonNotification/Delete'
+2024-02-26 17:33:04.7407 Endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.Delete (UserInteraction_WebApi)' with route pattern 'api/CommonNotification/Delete' is valid for the request path '/api/CommonNotification/Delete'
+2024-02-26 17:33:04.7407 Request matched endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.Delete (UserInteraction_WebApi)'
+2024-02-26 17:33:04.7407 Static files was skipped as the request already matched an endpoint.
+2024-02-26 17:33:04.7407 Successfully validated the token.
+2024-02-26 17:33:04.7407 AuthenticationScheme: Bearer was successfully authenticated.
+2024-02-26 17:33:04.7407 AuthenticationScheme: Bearer was successfully authenticated.
+2024-02-26 17:33:04.7407 Authorization was successful.
+2024-02-26 17:33:04.7407 Executing endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.Delete (UserInteraction_WebApi)'
+2024-02-26 17:33:04.7407 Route matched with {action = "Delete", controller = "CommonNotification"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int64) on controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi).
+2024-02-26 17:33:04.7407 Execution plan of authorization filters (in the following order): None
+2024-02-26 17:33:04.7407 Execution plan of resource filters (in the following order): None
+2024-02-26 17:33:04.7407 Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000), CommonService.Filters.TokenToUserIdActionFilter
+2024-02-26 17:33:04.7407 Execution plan of exception filters (in the following order): None
+2024-02-26 17:33:04.7407 Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-02-26 17:33:04.7407 Executing controller factory for controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi)
+2024-02-26 17:33:04.7407 Executed controller factory for controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi)
+2024-02-26 17:33:04.7407 Attempting to bind parameter 'Id' of type 'System.Int64' ...
+2024-02-26 17:33:04.7407 Attempting to bind parameter 'Id' of type 'System.Int64' using the name 'Id' in request data ...
+2024-02-26 17:33:04.7407 Done attempting to bind parameter 'Id' of type 'System.Int64'.
+2024-02-26 17:33:04.7407 Done attempting to bind parameter 'Id' of type 'System.Int64'.
+2024-02-26 17:33:04.7407 Attempting to validate the bound parameter 'Id' of type 'System.Int64' ...
+2024-02-26 17:33:04.7407 Done attempting to validate the bound parameter 'Id' of type 'System.Int64'.
+2024-02-26 17:33:04.7407 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:33:04.7407 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:33:04.7407 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:33:04.7407 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:33:04.7407 Action Filter: Before executing OnActionExecutionAsync on filter CommonService.Filters.TokenToUserIdActionFilter.
+2024-02-26 17:33:04.7407 Executing action method UserInteraction_WebApi.Controllers.CommonNotificationController.Delete (UserInteraction_WebApi) - Validation state: Valid
+2024-02-26 17:33:04.7407 Executing action method UserInteraction_WebApi.Controllers.CommonNotificationController.Delete (UserInteraction_WebApi) with arguments (1)
+2024-02-26 17:33:04.7546 Entity Framework Core 7.0.0 initialized 'UserInteractionDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0' with options: None
+2024-02-26 17:33:04.7546 Creating DbCommand for 'ExecuteReader'.
+2024-02-26 17:33:04.7546 Creating DbConnection.
+2024-02-26 17:33:04.7546 Created DbConnection. (0ms).
+2024-02-26 17:33:04.7546 Created DbCommand for 'ExecuteReader' (1ms).
+2024-02-26 17:33:04.7546 Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-02-26 17:33:04.7546 Opening connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:33:04.7546 Opened connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:33:04.7546 Executing DbCommand [Parameters=[@__Id_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Audience], [c].[CreatedBy], [c].[CreatedDate], [c].[IsActive], [c].[IsDeleted], [c].[IsRead], [c].[Message], [c].[ReceiverId], [c].[SenderId], [c].[SenderType], [c].[Title], [c].[TypeInt], [c].[UpdatedBy], [c].[UpdatedDate]
+FROM [CommonNotifications] AS [c]
+WHERE [c].[Id] = @__Id_0
+2024-02-26 17:33:04.7871 Executed DbCommand (10ms) [Parameters=[@__Id_0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Audience], [c].[CreatedBy], [c].[CreatedDate], [c].[IsActive], [c].[IsDeleted], [c].[IsRead], [c].[Message], [c].[ReceiverId], [c].[SenderId], [c].[SenderType], [c].[Title], [c].[TypeInt], [c].[UpdatedBy], [c].[UpdatedDate]
+FROM [CommonNotifications] AS [c]
+WHERE [c].[Id] = @__Id_0
+2024-02-26 17:33:04.7871 Context 'UserInteractionDbContext' started tracking 'CommonNotification' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 17:33:04.7871 Closing data reader to 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:33:04.7871 A data reader for 'UserInteraction2' on server 'LHR-TCH-UKHAN' is being disposed after spending 3ms reading results.
+2024-02-26 17:33:04.7871 Closing connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:33:04.7871 Closed connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN' (0ms).
+2024-02-26 17:33:04.8029 An entity of type 'CommonNotification' tracked by 'UserInteractionDbContext' changed state from 'Unchanged' to 'Deleted'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 17:33:04.8029 SaveChanges starting for 'UserInteractionDbContext'.
+2024-02-26 17:33:04.8029 DetectChanges starting for 'UserInteractionDbContext'.
+2024-02-26 17:33:04.8029 DetectChanges completed for 'UserInteractionDbContext'.
+2024-02-26 17:33:04.8292 Opening connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:33:04.8297 Opened connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:33:04.8297 Creating DbCommand for 'ExecuteReader'.
+2024-02-26 17:33:04.8297 Created DbCommand for 'ExecuteReader' (0ms).
+2024-02-26 17:33:04.8297 Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-02-26 17:33:04.8297 Executing DbCommand [Parameters=[@p0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [CommonNotifications]
+OUTPUT 1
+WHERE [Id] = @p0;
+2024-02-26 17:33:04.8528 Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Int64)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [CommonNotifications]
+OUTPUT 1
+WHERE [Id] = @p0;
+2024-02-26 17:33:04.8528 Closing data reader to 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:33:04.8528 A data reader for 'UserInteraction2' on server 'LHR-TCH-UKHAN' is being disposed after spending 0ms reading results.
+2024-02-26 17:33:04.8528 Closing connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:33:04.8528 Closed connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN' (0ms).
+2024-02-26 17:33:04.8665 An entity of type 'CommonNotification' tracked by 'UserInteractionDbContext' changed state from 'Deleted' to 'Detached'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-02-26 17:33:04.8665 SaveChanges completed for 'UserInteractionDbContext' with 1 entities written to the database.
+2024-02-26 17:33:04.8665 Executed action method UserInteraction_WebApi.Controllers.CommonNotificationController.Delete (UserInteraction_WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 119.0372ms.
+2024-02-26 17:33:04.8665 Action Filter: After executing OnActionExecutionAsync on filter CommonService.Filters.TokenToUserIdActionFilter.
+2024-02-26 17:33:04.8665 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:33:04.8665 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:33:04.8665 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:33:04.8665 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:33:04.8665 Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:33:04.8665 Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:33:04.8665 Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 17:33:04.8665 List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-02-26 17:33:04.8665 No information found on request to perform content negotiation.
+2024-02-26 17:33:04.8665 Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-26 17:33:04.8665 Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-26 17:33:04.8665 Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-26 17:33:04.8665 Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-26 17:33:04.8665 After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 17:33:04.8665 Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:33:04.8665 Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:33:04.8665 Executed action UserInteraction_WebApi.Controllers.CommonNotificationController.Delete (UserInteraction_WebApi) in 128.3218ms
+2024-02-26 17:33:04.8665 Executed endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.Delete (UserInteraction_WebApi)'
+2024-02-26 17:33:04.8766 Connection id "0HN1MOO3P7UHG" completed keep alive response.
+2024-02-26 17:33:04.8766 'UserInteractionDbContext' disposed.
+2024-02-26 17:33:04.8766 Disposing connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:33:04.8766 Disposed connection to database '' on server '' (0ms).
+2024-02-26 17:33:04.8766 Request finished HTTP/1.1 GET http://localhost:5107/api/CommonNotification/Delete?Id=1 - - - 200 - application/json;+charset=utf-8 135.1592ms
+2024-02-26 17:33:06.0719 Connection id "0HN1MOO3P7UHG" received FIN.
+2024-02-26 17:33:06.0719 Connection id "0HN1MOO3P7UHG" disconnecting.
+2024-02-26 17:33:06.0719 Connection id "0HN1MOO3P7UHG" stopped.
+2024-02-26 17:33:06.0719 Connection id "0HN1MOO3P7UHG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-02-26 17:33:11.6815 Connection id "0HN1MOO3P7UHH" accepted.
+2024-02-26 17:33:11.6815 Connection id "0HN1MOO3P7UHH" started.
+2024-02-26 17:33:11.6815 Request starting HTTP/1.1 GET http://localhost:5107/api/CommonNotification/GetAll - -
+2024-02-26 17:33:11.6815 All hosts are allowed.
+2024-02-26 17:33:11.6815 1 candidate(s) found for the request path '/api/CommonNotification/GetAll'
+2024-02-26 17:33:11.6815 Endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.GetAll (UserInteraction_WebApi)' with route pattern 'api/CommonNotification/GetAll' is valid for the request path '/api/CommonNotification/GetAll'
+2024-02-26 17:33:11.6815 Request matched endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.GetAll (UserInteraction_WebApi)'
+2024-02-26 17:33:11.6815 Static files was skipped as the request already matched an endpoint.
+2024-02-26 17:33:11.6893 Successfully validated the token.
+2024-02-26 17:33:11.6893 AuthenticationScheme: Bearer was successfully authenticated.
+2024-02-26 17:33:11.6893 AuthenticationScheme: Bearer was successfully authenticated.
+2024-02-26 17:33:11.6893 Authorization was successful.
+2024-02-26 17:33:11.6893 Executing endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.GetAll (UserInteraction_WebApi)'
+2024-02-26 17:33:11.6893 Route matched with {action = "GetAll", controller = "CommonNotification"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi).
+2024-02-26 17:33:11.6893 Execution plan of authorization filters (in the following order): None
+2024-02-26 17:33:11.6893 Execution plan of resource filters (in the following order): None
+2024-02-26 17:33:11.6893 Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000), CommonService.Filters.TokenToUserIdActionFilter
+2024-02-26 17:33:11.6893 Execution plan of exception filters (in the following order): None
+2024-02-26 17:33:11.6893 Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-02-26 17:33:11.6893 Executing controller factory for controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi)
+2024-02-26 17:33:11.6893 Executed controller factory for controller UserInteraction_WebApi.Controllers.CommonNotificationController (UserInteraction_WebApi)
+2024-02-26 17:33:11.6893 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:33:11.6893 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:33:11.6893 Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:33:11.6893 Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:33:11.6893 Action Filter: Before executing OnActionExecutionAsync on filter CommonService.Filters.TokenToUserIdActionFilter.
+2024-02-26 17:33:11.6893 Executing action method UserInteraction_WebApi.Controllers.CommonNotificationController.GetAll (UserInteraction_WebApi) - Validation state: Valid
+2024-02-26 17:33:11.7103 Entity Framework Core 7.0.0 initialized 'UserInteractionDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:7.0.0' with options: None
+2024-02-26 17:33:11.7103 Creating DbCommand for 'ExecuteReader'.
+2024-02-26 17:33:11.7103 Creating DbConnection.
+2024-02-26 17:33:11.7103 Created DbConnection. (0ms).
+2024-02-26 17:33:11.7103 Created DbCommand for 'ExecuteReader' (0ms).
+2024-02-26 17:33:11.7103 Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-02-26 17:33:11.7103 Opening connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:33:11.7103 Opened connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:33:11.7103 Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[SenderId], [c].[ReceiverId], [c].[TypeInt], [c].[Message], [c].[Title], [c].[SenderType], [c].[Audience], [c].[IsRead], [c].[CreatedDate]
+FROM [CommonNotifications] AS [c]
+2024-02-26 17:33:11.7467 Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[SenderId], [c].[ReceiverId], [c].[TypeInt], [c].[Message], [c].[Title], [c].[SenderType], [c].[Audience], [c].[IsRead], [c].[CreatedDate]
+FROM [CommonNotifications] AS [c]
+2024-02-26 17:33:11.7574 Closing data reader to 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:33:11.7574 A data reader for 'UserInteraction2' on server 'LHR-TCH-UKHAN' is being disposed after spending 12ms reading results.
+2024-02-26 17:33:11.7574 Closing connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:33:11.7574 Closed connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN' (0ms).
+2024-02-26 17:33:11.7574 Executed action method UserInteraction_WebApi.Controllers.CommonNotificationController.GetAll (UserInteraction_WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 66.6235ms.
+2024-02-26 17:33:11.7574 Action Filter: After executing OnActionExecutionAsync on filter CommonService.Filters.TokenToUserIdActionFilter.
+2024-02-26 17:33:11.7574 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:33:11.7574 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-02-26 17:33:11.7574 Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:33:11.7574 Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-02-26 17:33:11.7574 Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:33:11.7574 Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:33:11.7574 Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 17:33:11.7574 List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-02-26 17:33:11.7680 No information found on request to perform content negotiation.
+2024-02-26 17:33:11.7680 Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-02-26 17:33:11.7680 Attempting to select the first formatter in the output formatters list which can write the result.
+2024-02-26 17:33:11.7680 Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-02-26 17:33:11.7680 Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[UserInteraction_Application.Dtos.CommonNotification.GetCommonNotificationDto, UserInteraction_Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-26 17:33:11.7680 After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult.
+2024-02-26 17:33:11.7680 Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:33:11.7680 Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-02-26 17:33:11.7680 Executed action UserInteraction_WebApi.Controllers.CommonNotificationController.GetAll (UserInteraction_WebApi) in 81.1141ms
+2024-02-26 17:33:11.7680 Executed endpoint 'UserInteraction_WebApi.Controllers.CommonNotificationController.GetAll (UserInteraction_WebApi)'
+2024-02-26 17:33:11.7680 Connection id "0HN1MOO3P7UHH" completed keep alive response.
+2024-02-26 17:33:11.7680 'UserInteractionDbContext' disposed.
+2024-02-26 17:33:11.7680 Disposing connection to database 'UserInteraction2' on server 'LHR-TCH-UKHAN'.
+2024-02-26 17:33:11.7680 Disposed connection to database '' on server '' (0ms).
+2024-02-26 17:33:11.7680 Request finished HTTP/1.1 GET http://localhost:5107/api/CommonNotification/GetAll - - - 200 - application/json;+charset=utf-8 90.6371ms
+2024-02-26 17:33:16.4018 Connection id "0HN1MOO3P7UHH" received FIN.
+2024-02-26 17:33:16.4018 Connection id "0HN1MOO3P7UHH" disconnecting.
+2024-02-26 17:33:16.4173 Connection id "0HN1MOO3P7UHH" stopped.
+2024-02-26 17:33:16.4468 Connection id "0HN1MOO3P7UHH" sending FIN because: "The Socket transport's send loop completed gracefully."
